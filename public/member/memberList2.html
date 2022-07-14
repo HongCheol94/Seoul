@@ -12,18 +12,18 @@
 	
 	
 	<p class="fs-1">회원관리</p>
-	<div class="container-fluid border">
-		<div class="row row-cols-2 row-cols-sm-6 g-2 px-2">
+	<div class="container-fluid">
+		<div class="row" border:>
 			<div class="col">
-				<select name="" class="form-select-form-select-sm">\
-					<option value>삭제여부</option>
+				<select class="form-select-form-select-sm" aria-label="Default select example" id="memberList">
+					<option selected>삭제여부</option>
 					<option value="삭제">삭제</option>
 					<option value="미삭제">미삭제</option>
 				</select>
 			</div>
 			<div class="col">
-				<select name="" calss="form-select form-select-sm">
-					<option value selected>날짜</option>
+				<select calss="form-select form-select-sm" aria-label="Default select example" id="memberList">
+					<option selected>날짜조회</option>
 					<option value="등록일">등록일</option>
 					<option value="수정일">수정일</option>
 					<option value="생일">생일</option>
@@ -39,7 +39,7 @@
 		<div class="row row-cols-2 row cols-sm-6 g-2 mt-1 px-0">
 			<div class="col">
 				<select calss="form-select form-select-sm" name="" id="">
-					<option value selected>검색구분</option>
+					<option selected>검색구분</option>
 					<option value="이름"></option>
 					<option value="아이디"></option>
 				</select>
@@ -151,25 +151,9 @@
 						<td>kook@nate.com</td>
 						<td>2003.04.30</td>
 					</tr>
+						
 				</table>
-		</div>	
-		<nav aria-label="Page navigation example">
-		  <ul class="pagination justify-content-end">
-		    <li class="page-item">
-		      <a class="page-link" href="#" aria-label="Previous">
-		        <span aria-hidden="true">&laquo;</span>
-		      </a>
-		    </li>
-		    <li class="page-item"><a class="page-link" href="#">1</a></li>
-		    <li class="page-item"><a class="page-link" href="#">2</a></li>
-		    <li class="page-item"><a class="page-link" href="#">3</a></li>
-		    <li class="page-item">
-		      <a class="page-link" href="#" aria-label="Next">
-		        <span aria-hidden="true">&raquo;</span>
-		      </a>
-		    </li>
-		  </ul>
-		</nav>	
+		</div>		
 		
 	<!-- end -->
 	
