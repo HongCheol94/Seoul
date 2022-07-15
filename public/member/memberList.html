@@ -6,155 +6,199 @@
 <title>Bootstrap demo</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
+<form method="post" action="./memberList2.html">
 <body>
-	
-	<!-- start -->
-	
-	
-	<p class="fs-1">회원관리</p>
-	<div class="container-fluid border">
-		<div class="row row-cols-2 row-cols-sm-6 g-2 px-2">
-			<div class="col">
-				<select name="" class="form-select-form-select-sm">\
-					<option value>삭제여부</option>
-					<option value="삭제">삭제</option>
-					<option value="미삭제">미삭제</option>
-				</select>
-			</div>
-			<div class="col">
-				<select name="" calss="form-select form-select-sm">
-					<option value selected>날짜</option>
-					<option value="등록일">등록일</option>
-					<option value="수정일">수정일</option>
-					<option value="생일">생일</option>
-				</select>
-			</div>
-			<div class="col">
-				<input type="text" id="" name="" value="시작일" class="form-control-sm hasDatepicker" autocomplete="off">
-			</div>
-			<div class="col">
-				<input type="text" id="" name="" value="종료일" class="form-control form-control-sm hasDatepicker" autocomplete="off">
+	<form method="post" action="./memberList2.html">
+		<!-- 상단목록 -->
+		<nav class="navbar sticky-top">
+		  <div class="container-fluid">
+		    <a class="navbar-brand" href="#">
+		    	<image alt="" src="./image/kbcar.jpg" width="70px">
+		    </a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+		      <div class="offcanvas-header">
+		        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+		        	<image alt="" src="./image/kbcar.jpg" width="100px">
+	        	</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		      </div>
+		      <div class="offcanvas-body">
+		        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+		          <li class="nav-item">
+		            <a class="nav-link active" aria-current="page" href="#">
+		            	<image alt="" src="./image/person.png" width="100x">
+	            	</a>
+		          </li>
+		          <hr>
+		          <li class="nav-item">
+		            <a class="nav-link" href="#" style="text-align: end;">로그인</a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" href="#" style="text-align: end;">로그아웃</a>
+		          </li>
+		          <hr>
+		        </form>
+		      </div>
+		    </div>
+		  </div>
+		</nav>
+		<nav class="navbar navbar-expand-lg bg-warning">
+		  <div class="container-fluid">
+		    <a class="navbar-brand" href="#"></a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		      <div class="navbar-nav">
+		        <a class="nav-link active" aria-current="page" href="#">Home</a>
+		        <a class="nav-link" href="#">코드그릅관리</a>
+		        <a class="nav-link" href="#">코드관리</a>
+		        <a class="nav-link disabled">회원관리</a>
+		      </div>
+		    </div>
+		  </div>
+		</nav>
+		<img src="./image/kbcar.jpg" class="rounded mx-auto d-block" alt="...">
+		<!-- 회원검색 -->
+		<div class="container border px">
+			<div class="row p-2">
+				<div class="col">
+					<select class="form-select" aria-label="Default select example">
+						<option selected>삭제여부</option>
+						<option value="삭제">삭제</option>
+						<option value="미삭제">미삭제</option>
+					</select>
+				</div>
+				<div class="col">
+					<select class="form-select" aria-label="Default select example">
+						<option selected>날짜</option>
+						<option value="가입일">가입일</option>
+						<option value="수정일">수정일</option>
+						<option value="생일">생일</option>
+					</select>
+				</div>
+				<div class="col">
+					<input type="text" id="DateStar" value="시작일" class="form-control form-control-sm hasDatepicker" autocomplete="off"	>
+				</div>
+				<div class="col">
+					<input type="text" id="DateEnd" value="종료일" class="form-control form-control-sm hasDatepicker" autocomplete="off"	>
+				</div>
+				<div class="row row-cols-sm-6">
+					<div class="col p-2">
+						<select class="form-select" aria-label="Default select example">
+							<option selected>검색구분</option>
+							<option value="번호">번호</option>
+							<option value="이름">이름</option>
+							<option value="아이디">아이디</option>
+							<option value="회원번호">회원번호</option>
+						</select>
+					</div>
+					<div class="col p-3 px-0">
+						<input type="text" name="">
+					</div>
+					<div>
+						<button type="button" class="btn btn-promary btn-sm border p-1 mt-3" >검색</button>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="row row-cols-2 row cols-sm-6 g-2 mt-1 px-0">
-			<div class="col">
-				<select calss="form-select form-select-sm" name="" id="">
-					<option value selected>검색구분</option>
-					<option value="이름"></option>
-					<option value="아이디"></option>
-				</select>
-			</div>
-		</div>
-		<div class="col">
-			<input text="" name="">
-		</div>
-			
-			
-				<table class="table table-hover">
-					<tr class="table-warning">
-						<th>번호</th>
-						<th>회원번호</th>
-						<th>이름</th>
-						<th>성별</th>
-						<th>전화번호</th>
-						<th>주소</th>
-						<th>이메일</th>
-						<th>가입일</th>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>000184</td>
-						<td>마동석</td>
-						<td>남자</td>
-						<td>010-3215-5137</td>
-						<td>서울시 서초구 잠원동</td>
-						<td>madongsuck@naver.com</td>
-						<td>2000.10.21</td>
-					</tr>
-						<tr>
-						<td>2</td>
-						<td>013242</td>
-						<td>이나영</td>
-						<td>여자</td>
-						<td>010-3314-7251</td>
-						<td>서울시 강남구 테헤란로</td>
-						<td>LeeNaYong@naver.com</td>
-						<td>1999.07.24</td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td>021421</td>
-						<td>정우성</td>
-						<td>남자</td>
-						<td>010-4732-1377</td>
-						<td>서울시 도봉구 방학동</td>
-						<td>jungWoo@gmail.com</td>
-						<td>121751</td>
-					</tr>
-						<tr>
-						<td>4</td>
-						<td>171397</td>
-						<td>황정민</td>
-						<td>남자</td>
-						<td>010-7721-5134</td>
-						<td>경기도 의정부시 가능동</td>
-						<td>hwang@nate.com</td>
-						<td>1997.02.12</td>
-					</tr>
-					<tr>
-						<td>5</td>
-						<td>018344</td>
-						<td>태&nbsp;연</td>
-						<td>여자</td>
-						<td>010-2972-7116</td>
-						<td>서울시 강남구 테헤란로</td>
-						<td>Taesnsd@gmail.com</td>
-						<td>2001.06.25</td>
-					</tr>
-					<tr>
-						<td>6</td>
-						<td>000113</td>
-						<td>윤&nbsp;아</td>
-						<td>여자</td>
-						<td>010-9971-1435</td>
-						<td>서울시 서초구 테헤란로</td>
-						<td>younasbsd@gamil.com</td>
-						<td>2001.03.02</td>
-					</tr>
-					<tr>
-						<td>7</td>
-						<td>721124</td>
-						<td>박서준</td>
-						<td>남자</td>
-						<td>010-6674-1278</td>
-						<td>경기도 양주시 백석읍</td>
-						<td>parksj@naver.com</td>
-						<td>1998.09.29</td>
-					</tr>
-					<tr>
-						<td>8</td>
-						<td>231552</td>
-						<td>김소연</td>
-						<td>여자</td>
-						<td>010-6541-7789</td>
-						<td>서울시 도봉구 방학동</td>
-						<td>soyoun@nate.com</td>
-						<td>2003.04.30</td>
-					</tr>
-					<tr>
-						<td>9</td>
-						<td>131652</td>
-						<td>김종국</td>
-						<td>남자</td>
-						<td>010-1511-2489</td>
-						<td>경기도 의정부시 의정부동</td>
-						<td>kook@nate.com</td>
-						<td>2003.04.30</td>
-					</tr>
-				</table>
-		</div>	
+		<!-- 회원리스트 -->
+		<table class="table table-hover">
+			<tr class="table-warning">
+				<th>
+					<input type="checkbox" name="check" value="selectAll" onclick="selectAll(this)">
+				</th>
+				<th>번호</th>
+				<th>회원번호</th>
+				<th>이름</th>
+				<th>성별</th>
+				<th>전화번호</th>
+				<th>주소</th>
+				<th>이메일</th>
+				<th>가입일</th>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" name="check">
+				</td>
+				<td>1</td>
+				<td>00114</td>
+				<td>마동석</td>
+				<td>남자</td>
+				<td>010-1828-7163</td>
+				<td>서울시 서초구 잠원동</td>
+				<td>madongsuck@naver.com</td>
+				<td>2000.04.26</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" name="check">
+				</td>
+				<td>2</td>
+				<td>00564</td>
+				<td>김소은</td>
+				<td>여자</td>
+				<td>010-4852-8251</td>
+				<td>서울시 강남구 테헤란로</td>
+				<td>soeun@naver.com</td>
+				<td>2005.02.26</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" name="check">
+				</td>
+				<td>3</td>
+				<td>00264</td>
+				<td>정우성</td>
+				<td>남자</td>
+				<td>010-7217-1375</td>
+				<td>서울시 도봉구 방학동</td>
+				<td>menam@nate.com</td>
+				<td>1998.10.12</td>
+			</tr>
+				<td>
+					<input type="checkbox" name="check">
+				</td>
+				<td>4</td>
+				<td>01038</td>
+				<td>이나영</td>
+				<td>여자</td>
+				<td>010-3345-8762</td>
+				<td>서울시 강남구 테헤란로]</td>
+				<td>nayong@naver.com</td>
+				<td>1999.03.22</td>
+			</tr>
+				<td>
+					<input type="checkbox" name="check">
+				</td>
+				<td>5</td>
+				<td>00342</td>
+				<td>송혜교</td>
+				<td>여자</td>
+				<td>010-4211-7531</td>
+				<td>서울시 서초구 반포동</td>
+				<td>menam@nate.com</td>
+				<td>1998.10.12</td>
+			</tr>
+				<td>
+					<input type="checkbox" name="check">
+				</td>
+				<td>6</td>
+				<td>000482</td>
+				<td>이동욱</td>
+				<td>남자</td>
+				<td>010-1583-6648</td>
+				<td>경기도 의정부시 의정부동</td>
+				<td>menam@nate.com</td>
+				<td>2001.08.16</td>
+			</tr>
+		</table>
+		<!-- 페이지 목록 -->
 		<nav aria-label="Page navigation example">
-		  <ul class="pagination justify-content-end">
+		  <ul class="pagination justify-content-center">
 		    <li class="page-item">
 		      <a class="page-link" href="#" aria-label="Previous">
 		        <span aria-hidden="true">&laquo;</span>
@@ -169,10 +213,24 @@
 		      </a>
 		    </li>
 		  </ul>
-		</nav>	
-		
-	<!-- end -->
+		</nav>
+	</form>
+			
+			
 	
+	
+	
+	<script type="text/javascript">
+	function selectAll(selectAll)  {
+		  const checkboxes 
+		       = document.getElementsByName('check');
+		  
+		  checkboxes.forEach((checkbox) => {
+		    checkbox.checked = selectAll.checked;
+		  })
+		}
+	</script>
+	<script src="https://kit.fontawesome.com/df50a53180.js" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
