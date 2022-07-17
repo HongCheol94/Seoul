@@ -10,11 +10,23 @@
 	
 	<!-- start -->
 	<form method="post" action="./memberList2.html">
-		<div class="container-fluid border">
+		<div class="container-fluid">
 			<div class="row justify-content-center">
-				<div class="row row-col border p-1">
 				<div class="col">
 					<image alt="" src="./image/kbcar.jpg" width="200px">회원가입</image>
+				</div>
+			<div class="row justify-content-center">
+				<div class="col">
+					<div class="form-floating mb-3">
+						<input type="text" class="form-control" id="ID" placeholder="성">
+						<label for="floatingInput">성</label>
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-floating mb-3">
+						<input type="text" class="form-control" id="ID" placeholder="이름">
+						<label for="floatingInput">이름</label>
+					</div>
 				</div>
 				<div class="form-floating mb-3">
 				  <input type="ID" class="form-control" id="ID" placeholder="ID">
@@ -33,20 +45,23 @@
 				  <label for="floatingPassword">이메일</label>
 				</div>
 				<div class="form-floating mt-3">
-				  <input type="number" class="form-control" id="floatingPassword" placeholder="callnumber">
+				  <input type="text" class="form-control" id="floatingPassword" placeholder="callnumber">
 				  <label for="floatingPassword">전화번호</label>
 				</div>
-					<div class="row row-col-sm-6 g-2">
-						<div class="col-6">
-							<input type="text" name="">
+				<div class="row row-col-sm-6 g-2">
+					<div class="col-6">
+						 <div class="form-floating mt-3">
+							  <input type="text" class="form-control" id="floatingPassword" placeholder="인증번호입력">
+							  <label for="floatingPassword">인증번호입력</label>
 						</div>
-						<div class="col-6">
-							<input type="button" value="인증번호전송">
-						</div>
+					</div>
+					<div class="col-6">
+						<input type="button" value="인증번호전송">
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 	</form>
 		
 	
