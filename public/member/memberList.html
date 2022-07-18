@@ -96,11 +96,16 @@
 							<option value="회원번호">회원번호</option>
 						</select>
 					</div>
-					<div class="col p-3 px-0">
-						<input type="text" name="">
+					<div class="col p-1">
+						<div class="form-floating mb-3">
+						  <input type="text" class="form-control" id="floatingInput" placeholder=" search">
+						  <label for="floatingInput"> search</label>
+						</div>
 					</div>
 					<div>
-						<button type="button" class="btn btn-promary btn-sm border p-1 mt-3" >검색</button>
+						<button type="button" class="btn btn-promary btn-sm border p-1 mt-3" >
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
 					</div>
 				</div>
 			</div>
@@ -198,12 +203,7 @@
 				</tr>
 			</table>
 			<!-- 페이지 목록 -->
-			<div class="row">
-				<div class="col-1">
-					<button type="button" class="btn btn-outline-warning btn-lg">
-						<i class="fa-solid fa-trash-can"></i>
-					</button>
-				</div>
+			<div class="row justify-content-center">
 				<div class="col-10">
 					<nav aria-label="Page navigation example">
 					  <ul class="pagination justify-content-center">
@@ -223,7 +223,14 @@
 					  </ul>
 					</nav>
 				</div>
-				<div class="col-1 px-5">
+			</div>
+			<div class="row">
+				<div class="col-1">
+					<button type="button" class="btn btn-outline-warning btn-lg">
+						<i class="fa-solid fa-trash-can"></i>
+					</button>
+				</div>
+				<div class="col-1 px-5 offset-10">
 					<button type="button" class="btn btn-outline-warning  btn-lg">
 						<i class="fa-solid fa-user-plus"></i>
 					</button>
