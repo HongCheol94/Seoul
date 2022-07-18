@@ -80,10 +80,10 @@
 						<option value="생일">생일</option>
 					</select>
 				</div>
-				<div class="col">
+				<div class="col mt-1">
 					<input type="text" id="DateStar" value="시작일" class="form-control form-control-sm hasDatepicker" autocomplete="off"	>
 				</div>
-				<div class="col">
+				<div class="col mt-1">
 					<input type="text" id="DateEnd" value="종료일" class="form-control form-control-sm hasDatepicker" autocomplete="off"	>
 				</div>
 				<div class="row row-cols-sm-6">
@@ -198,23 +198,37 @@
 				</tr>
 			</table>
 			<!-- 페이지 목록 -->
-			<nav aria-label="Page navigation example">
-			  <ul class="pagination justify-content-center">
-			    <li class="page-item">
-			      <a class="page-link" href="#" aria-label="Previous">
-			        <span aria-hidden="true">&laquo;</span>
-			      </a>
-			    </li>
-			    <li class="page-item"><a class="page-link" href="#">1</a></li>
-			    <li class="page-item"><a class="page-link" href="#">2</a></li>
-			    <li class="page-item"><a class="page-link" href="#">3</a></li>
-			    <li class="page-item">
-			      <a class="page-link" href="#" aria-label="Next">
-			        <span aria-hidden="true">&raquo;</span>
-			      </a>
-			    </li>
-			  </ul>
-			</nav>
+			<div class="row">
+				<div class="col-1">
+					<button type="button" class="btn btn-outline-warning btn-lg">
+						<i class="fa-solid fa-trash-can"></i>
+					</button>
+				</div>
+				<div class="col-10">
+					<nav aria-label="Page navigation example">
+					  <ul class="pagination justify-content-center">
+					    <li class="page-item">
+					      <a class="page-link" href="#" aria-label="Previous">
+					        <span aria-hidden="true">&laquo;</span>
+					      </a>
+					    </li>
+					    <li class="page-item"><a class="page-link" href="#">1</a></li>
+					    <li class="page-item"><a class="page-link" href="#">2</a></li>
+					    <li class="page-item"><a class="page-link" href="#">3</a></li>
+					    <li class="page-item">
+					      <a class="page-link" href="#" aria-label="Next">
+					        <span aria-hidden="true">&raquo;</span>
+					      </a>
+					    </li>
+					  </ul>
+					</nav>
+				</div>
+				<div class="col-1 px-5">
+					<button type="button" class="btn btn-outline-warning  btn-lg">
+						<i class="fa-solid fa-user-plus"></i>
+					</button>
+				</div>
+			</div>
 		</div>
 		
 	</form>
