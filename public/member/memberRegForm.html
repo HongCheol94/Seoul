@@ -6,79 +6,63 @@
 <title>Bootstrap demo</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
+<form method="post" action="./memberList2.html">
 <body>
-	<div class="container-fluid">
-		<nav class="navbar sticky-top">
-		  <div class="container-fluid">
-		    <a class="navbar-brand" href="#">
-		    	<image alt="" src="./image/kbcar.jpg" width="70px">
-		    </a>
-		    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-		      <span class="navbar-toggler-icon"></span>
-		    </button>
-		    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-		      <div class="offcanvas-header">
-		        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-		        	<image alt="" src="./image/kbcar.jpg" width="100px">
-	        	</h5>
-		        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-		      </div>
-		      <div class="offcanvas-body">
-		        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-		          <li class="nav-item">
-		            <a class="nav-link active" aria-current="page" href="#">
-		            	<image alt="" src="./image/person.png" width="100x">
-	            	</a>
-		          </li>
-		          <hr>
-		          <li class="nav-item">
-		            <a class="nav-link" href="#" style="text-align: end;">로그인</a>
-		          </li>
-		          <li class="nav-item">
-		            <a class="nav-link" href="#" style="text-align: end;">로그아웃</a>
-		          </li>
-		          <hr>
-		        </form>
-		      </div>
-		    </div>
-		  </div>
-		</nav>
-		<nav class="navbar navbar-expand-lg bg-warning">
-		  <div class="container-fluid">
-		    <a class="navbar-brand" href="#"></a>
-		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-		      <span class="navbar-toggler-icon"></span>
-		    </button>
-		    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		      <div class="navbar-nav">
-		        <a class="nav-link active" aria-current="page" href="#">Home</a>
-		        <a class="nav-link" href="#">코드그릅관리</a>
-		        <a class="nav-link" href="#">코드관리</a>
-		        <a class="nav-link disabled">회원관리</a>
-		      </div>
-		    </div>
-		  </div>
-		</nav>
+	<form method="post" action="./memberList2.html">
+		<!-- 상단목록 -->
+		<div class="container-fluid">
+			<nav class="navbar sticky-top">
+			    <a class="navbar-brand" href="#">
+			    	<image alt="" src="./image/kbcar.jpg" width="70px">
+			    </a>
+			    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			      <div class="offcanvas-header">
+			        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+			        	<image alt="" src="./image/kbcar.jpg" width="100px">
+		        	</h5>
+			        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			      </div>
+			      <div class="offcanvas-body">
+			        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+			          <li class="nav-item">
+			            <a class="nav-link active" aria-current="page" href="#">
+			            	<image alt="" src="./image/person.png" width="100x">
+		            	</a>
+			          </li>
+			          <hr>
+			          <li class="nav-item">
+			            <a class="nav-link" href="#" style="text-align: end;">로그인</a>
+			          </li>
+			          <li class="nav-item">
+			            <a class="nav-link" href="#" style="text-align: end;">로그아웃</a>
+			          </li>
+			          <hr>
+			      </div>
+			    </div>
+			</nav>
+			<nav class="navbar navbar-expand-lg bg-warning">
+		    	<a class="navbar-brand" href="#"></a>
+				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				      <span class="navbar-toggler-icon"></span>
+				    </button>
+			    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			      <div class="navbar-nav">
+			        <a class="nav-link active" aria-current="page" href="#">Home</a>
+			        <a class="nav-link" href="#">코드그릅관리</a>
+			        <a class="nav-link" href="#">코드관리</a>
+			        <a class="nav-link disabled">회원관리</a>
+			      </div>
+			    </div>
+			</nav>
 		<div class="row justify-content-center">
 			<div class="col-md-1">
 				<image alt="" src="./image/kbcar.jpg" width="200px"></image>
 			</div>
 			<div class="col-md-2 mt-5 px-5">
 				<p class="fs-1">회원정보</p>
-			</div>
-		</div>
-		<div class="row justify-content-center">
-			<div class="col-md-2">
-				<div class="form-floating mb-3">
-					<input type="text" class="form-control" id="ID" placeholder="성">
-					<label for="floatingInput">성</label>
-				</div>
-			</div>
-			<div class="col-md-2">
-				<div class="form-floating mb-3">
-					<input type="text" class="form-control" id="ID" placeholder="이름">
-					<label for="floatingInput">이름</label>
-				</div>
 			</div>
 		</div>
 		<div class="row justify-content-center">
@@ -103,6 +87,22 @@
 		   	   </div>
    	  		 </div>
 		</div>
+		<div class="row justify-content-center">
+			<div class="col-md-2">
+				<div class="form-floating mb-3">
+					<input type="text" class="form-control" id="ID" placeholder="성">
+					<label for="floatingInput">성</label>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="form-floating mb-3">
+					<input type="text" class="form-control" id="ID" placeholder="이름">
+					<label for="floatingInput">이름</label>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+		
 		<div class="row justify-content-center">
 			<div class="col-md-4">
 				<div class="form-floating">
@@ -150,7 +150,8 @@
 			</div>
 		</div>
 	</div>
-			
+	</div>
+	</form>		
 	
 
 

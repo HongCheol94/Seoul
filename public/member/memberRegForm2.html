@@ -12,7 +12,6 @@
 <body>
 	<div class="container-fluid">
 		<nav class="navbar sticky-top">
-		  <div class="container-fluid">
 		    <a class="navbar-brand" href="#">
 		    	<image alt="" src="./image/kbcar.jpg" width="70px">
 		    </a>
@@ -43,11 +42,9 @@
 		          <hr>
 		        </form>
 		      </div>
-		    </div>
 		  </div>
 		</nav>
 		<nav class="navbar navbar-expand-lg bg-warning">
-		  <div class="container-fluid">
 		    <a class="navbar-brand" href="#"></a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 		      <span class="navbar-toggler-icon"></span>
@@ -60,7 +57,6 @@
 		        <a class="nav-link disabled">회원관리</a>
 		      </div>
 		    </div>
-		  </div>
 		</nav>
 		<div class="row justify-content-center">
 			<div class="col-md-1">
@@ -71,80 +67,212 @@
 			</div>
 		</div>
 		<p class="fs-4">기본정보</p>
-		<div class="row">
-			<div class="col-1 border bg-warning">
-				아이디
-			</div>
-			<div class="col-3">
-				<form class="form-floating">
-				  <input type="ID" class="form-control" id="ID" placeholder="Destiny" value="Destiny">
-				  <label for="floatingInputValue">아이디</label>
-				</form>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-1 border bg-warning">
-				비밀번호
-			</div>
-			<div class="col-3">
-				<form class="form-floating">
-				  <input type="password" class="form-control" id="password" placeholder="*********" value="*********">
-				  <label for="floatingInputValue">비밀번호</label>
-				</form>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-1 border bg-warning">
-				비밀번호 확인
-			</div>
-			<div class="col-3">
-				<form class="form-floating">
-				  <input type="password" class="form-control" id="password" placeholder="*********" value="*********">
-				  <label for="floatingInputValue">비밀번호 확인</label>
-				</form>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-1 border bg-warning">
-				이름
-			</div>
-			<div class="col-3">
-				<form class="form-floating">
-				  <input type="text" class="form-control" id="name" placeholder="김홍철" value="김홍철">
-				  <label for="floatingInputValue">이름</label>
-				</form>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				주소
-			</div>
+		<div class="row border">
 			<div class="col">
 				<div class="row">
-					<div class="col">
+					<div class="col-1 border bg-warning">
+						아이디
+					</div>
+					<div class="col-3">
 						<form class="form-floating">
-						  <input type="text" class="form-control" id="name" placeholder="김홍철" value="김홍철">
-						  <label for="floatingInputValue">이름</label>
+						  <input type="ID" class="form-control" id="ID" placeholder="Destiny" value="Destiny">
+						  <label for="floatingInputValue">아이디</label>
 						</form>
 					</div>
-					<div class="col">
+					<div class="col mt-3 px-0">
+						(영문소문자/숫자,4~16자)
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1 border bg-warning">
+						비밀번호
+					</div>
+					<div class="col-3">
 						<form class="form-floating">
-						  <input type="text" class="form-control" id="name" placeholder="김홍철" value="김홍철">
-						  <label for="floatingInputValue">이름</label>
+						  <input type="password" class="form-control" id="password" placeholder="*********" value="*********">
+						  <label for="floatingInputValue">비밀번호</label>
 						</form>
 					</div>
-					<div class="col">
+					<div class="col mt-3 px-0">
+						(영문 대소문자/숫자/특수문자 중 2가지 이상 조합,8자16자)
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1 border bg-warning">
+						비밀번호 확인
+					</div>
+					<div class="col-3">
 						<form class="form-floating">
-						  <input type="text" class="form-control" id="name" placeholder="김홍철" value="김홍철">
+						  <input type="password" class="form-control" id="password" placeholder="*********" value="*********">
+						  <label for="floatingInputValue">비밀번호 확인</label>
+						</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1 border bg-warning">
+						이름
+					</div>
+					<div class="col-3">
+						<form class="form-floating">
+						  <input type="text" class="form-control" id="name" placeholder="차차차" value="차차차">
 						  <label for="floatingInputValue">이름</label>
 						</form>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-1 border bg-warning p-3">
+						성별
+					</div>
+					<div class="col-1">
+						<input type="radio" name="route">남자
+					</div>
+					<div class="col-1">
+						<input type="radio" name="route">여자
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1 border bg-warning">
+						생년월일
+					</div>
+					<div class="col">
+						
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1 border bg-warning">
+						주소
+					</div>
+					<div class="col">
+						<div class="row">
+							<div class="col-2">
+								<form class="form-floating">
+								  <input type="text" class="form-control" id="name" placeholder="우편번호" value="">
+								  <label for="floatingInputValue"></label>
+								</form>
+							</div>
+							<div class="col mt-2">
+								<button type="button" class="btn btn-outline-warning">우편번호</button>
+							</div>
+							<div class="row">
+								<div class="col">
+									<form class="form-floating">
+									  <input type="text" class="form-control" id="name" placeholder="" value="">
+									  <label for="floatingInputValue"></label>
+									</form>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<form class="form-floating">
+									  <input type="text" class="form-control" id="name" placeholder="" value="">
+									  <label for="floatingInputValue"></label>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1 border bg-warning">
+						일반전화
+					</div>
+					<div class="col-1">
+						<div class="btn-group">
+						  <button type="button" class="dropdown-toggle btn btn-outline-warning" data-bs-toggle="dropdown" aria-expanded="false">
+						    선택
+						  </button>
+						  <ul class="dropdown-menu">
+						    <li><a class="dropdown-item" href="#">010</a></li>
+						    <li><a class="dropdown-item" href="#">011</a></li>
+						    <li><a class="dropdown-item" href="#">016</a></li>
+						  </ul>
+						</div>
+					</div>
+					<div class="col-1">
+						-
+					</div>
+					<div class="col-2">
+						<input type="text" class="form-control">
+					</div>
+					<div class="col-1">
+						-
+					</div>
+					<div class="col-2">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1 border bg-warning">
+						sms 수신여부
+					</div>
+					<div class="col">
+						<div class="row">
+							<div class="col-1">
+								<input type="radio" name="route">수신함
+							</div>
+							<div class="col-1">
+								<input type="radio" name="route">수신안함
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								쇼핑몰에서 제공하는 유익한 이벤트 소식을 SMS로 받으실 수 있습니다.
+							</div>
+						</div>
+					</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-1 border bg-warning">
+								이메일
+						</div>
+						<div class="col-2">
+							<input type="text" class="form-control">
+						</div>
+						<div class="col-1 px-5">	
+							@
+						</div>
+						<div class="col-1 px-0">	
+							<input type="text" class="form-control">
+						</div>
+						<div class="col-2 mt-2">
+							<select name="email" id="">
+					 			<option value="">선택
+					 			<option value="naver.com">네이버
+					 			<option value="daum.com">다음
+					 			<option value="nate.com">네이트
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-1 border bg-warning">
+								이메일
+						</div>
+						<div class="col-1">
+							<input type="text" class="form-control">@<input type="text" class="form-control">
+						</div>
+						<div class="col-1">
+							<select name="email" id="">
+					 			<option value="">선택
+					 			<option value="naver.com">네이버
+					 			<option value="daum.com">다음
+					 			<option value="nate.com">네이트
+							</select>
+						</div>
+					</div>
+		<div class="row">
+				<div class="col-1">
+					<button type="button" class="btn btn-outline-warning btn-lg">
+						<i class="fa-solid fa-trash-can"></i>
+					</button>
+				</div>
+				<div class="col-1 px-5 offset-10">
+					<button type="button" class="btn btn-outline-warning  btn-lg">
+						<i class="fa-solid fa-user-plus"></i>
+					</button>
+				</div>
 			</div>
 		</div>
-		
-		
-		
 		
 		<div class="row justify-content-center">
 			<div class="col text-center">
@@ -163,6 +291,8 @@
 			</div>
 		</div>
 	</div>
+	
+	
 			
 	
 
