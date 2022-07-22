@@ -1,17 +1,16 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap demo</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap demo</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-<form method="post" action="./memberList2.html">
 <body>
 	<form method="post" action="./memberList2.html">
 		<!-- 상단목록 -->
+	 <div class="container-md">
 		<nav class="navbar sticky-top">
-		  <div class="container-fluid">
 		    <a class="navbar-brand" href="#">
 		    	<image alt="" src="./image/kbcar.jpg" width="70px">
 		    </a>
@@ -40,13 +39,10 @@
 		            <a class="nav-link" href="#" style="text-align: end;">로그아웃</a>
 		          </li>
 		          <hr>
-		        </form>
 		      </div>
 		    </div>
-		  </div>
 		</nav>
 		<nav class="navbar navbar-expand-lg bg-warning">
-		  <div class="container-fluid">
 		    <a class="navbar-brand" href="#"></a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 		      <span class="navbar-toggler-icon"></span>
@@ -59,7 +55,6 @@
 		        <a class="nav-link disabled">회원관리</a>
 		      </div>
 		    </div>
-		  </div>
 		</nav>
 		<img src="./image/kbcar.jpg" class="rounded mx-auto d-block" alt="...">
 		<!-- 회원검색 -->
@@ -132,7 +127,9 @@
 					</td>
 					<td>1</td>
 					<td>00114</td>
-					<td>마동석</td>
+					<td>
+						<a href="memberModForm.html">마동석</a>
+					</td>
 					<td>남자</td>
 					<td>010-1828-7163</td>
 					<td>서울시 서초구 잠원동</td>
@@ -231,18 +228,16 @@
 					</button>
 				</div>
 				<div class="col-1 px-5 offset-10">
-					<button type="button" class="btn btn-outline-warning  btn-lg">
-						<i class="fa-solid fa-user-plus"></i>
-					</button>
+					<a href="memberRegForm.html">
+						<button type="button" class="btn btn-outline-warning  btn-lg">
+							<i class="fa-solid fa-user-plus"></i>
+						</button>
+					</a>
 				</div>
 			</div>
 		</div>
-		
+	</div>
 	</form>
-			
-			
-	
-	
 	
 	<script type="text/javascript">
 	function selectAll(selectAll)  {
