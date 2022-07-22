@@ -4,6 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Bootstrap demo</title>
+	<style type="text/css">
+	
+	</style>	
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
@@ -93,7 +96,7 @@
 					</div>
 					<div class="col p-1">
 						<div class="form-floating mb-3">
-						  <input type="text" class="form-control" id="floatingInput" placeholder=" search">
+						  <input onkeyup="filter()" type="text" class="form-control" id="value" placeholder=" search">
 						  <label for="floatingInput"> search</label>
 						</div>
 					</div>
@@ -108,7 +111,7 @@
 		<!-- 회원리스트 -->
 		<div class="container">
 			<table class="table table-hover">
-				<tr class="table-warning">
+				<tr class="table-warning sear">
 					<th>
 						<input type="checkbox" name="check" value="selectAll" onclick="selectAll(this)">
 					</th>
@@ -121,13 +124,13 @@
 					<th>이메일</th>
 					<th>가입일</th>
 				</tr>
-				<tr>
+				<tr class="search">
 					<td>
 						<input type="checkbox" name="check">
 					</td>
 					<td>1</td>
 					<td>00114</td>
-					<td>
+					<td class="sn">
 						<a href="memberModForm.html">마동석</a>
 					</td>
 					<td>남자</td>
@@ -136,38 +139,39 @@
 					<td>madongsuck@naver.com</td>
 					<td>2000.04.26</td>
 				</tr>
-				<tr>
+				<tr class="search">
 					<td>
 						<input type="checkbox" name="check">
 					</td>
 					<td>2</td>
 					<td>00564</td>
-					<td>김소은</td>
+					<td class="sn">김소은</td>
 					<td>여자</td>
 					<td>010-4852-8251</td>
 					<td>서울시 강남구 테헤란로</td>
 					<td>soeun@naver.com</td>
 					<td>2005.02.26</td>
 				</tr>
-				<tr>
+				<tr class="search">
 					<td>
 						<input type="checkbox" name="check">
 					</td>
 					<td>3</td>
 					<td>00264</td>
-					<td>정우성</td>
+					<td class="sn">정우성</td>
 					<td>남자</td>
 					<td>010-7217-1375</td>
 					<td>서울시 도봉구 방학동</td>
 					<td>menam@nate.com</td>
 					<td>1998.10.12</td>
 				</tr>
+				<tr class="search">
 					<td>
 						<input type="checkbox" name="check">
 					</td>
 					<td>4</td>
 					<td>01038</td>
-					<td>이나영</td>
+					<td class="sn">이나영</td>
 					<td>여자</td>
 					<td>010-3345-8762</td>
 					<td>서울시 강남구 테헤란로</td>
@@ -179,19 +183,19 @@
 					</td>
 					<td>5</td>
 					<td>00342</td>
-					<td>송혜교</td>
+					<td class="sn">송혜교</td>
 					<td>여자</td>
 					<td>010-4211-7531</td>
 					<td>서울시 서초구 반포동</td>
 					<td>menam@nate.com</td>
 					<td>1998.10.12</td>
-				</tr>
+				</tr class="search">
 					<td>
 						<input type="checkbox" name="check">
 					</td>
 					<td>6</td>
 					<td>000482</td>
-					<td>이동욱</td>
+					<td class="sn">이동욱</td>
 					<td>남자</td>
 					<td>010-1583-6648</td>
 					<td>경기도 의정부시 의정부동</td>
@@ -272,6 +276,24 @@
 		myModal.addEventListener('shown.bs.modal', () => {
 		  myInput.focus()
 		})
+		
+		
+		 function filter(){
+
+        var value, name, item, i;
+
+        value = document.getElementById("value").value.toUpperCase();
+        item = document.getElementsByClassName("search");
+
+        for(i=0;i<item.length;i++){
+          name = item[i].getElementsByClassName("sn");
+          if(name[0].innerHTML.toUpperCase().indexOf(value) > -1){
+            item[i].style.display = "flex";
+          }else{
+            item[i].style.display = "none";
+          }
+        }
+      }
 	</script>
 	<script src="https://kit.fontawesome.com/df50a53180.js" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
