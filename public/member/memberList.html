@@ -12,104 +12,103 @@
 <body>
 	<form method="post" action="./memberList2.html">
 		<!-- 상단목록 -->
-	 <div class="container-md">
-		<nav class="navbar sticky-top">
-		    <a class="navbar-brand" href="#">
-		    	<image alt="" src="./image/kbcar.jpg" width="70px">
-		    </a>
-		    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-		      <span class="navbar-toggler-icon"></span>
-		    </button>
-		    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-		      <div class="offcanvas-header">
-		        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-		        	<image alt="" src="./image/kbcar.jpg" width="100px">
-	        	</h5>
-		        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-		      </div>
-		      <div class="offcanvas-body">
-		        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-		          <li class="nav-item">
-		            <a class="nav-link active" aria-current="page" href="#">
-		            	<image alt="" src="./image/person.png" width="100x">
-	            	</a>
-		          </li>
-		          <hr>
-		          <li class="nav-item">
-		            <a class="nav-link" href="#" style="text-align: end;">로그인</a>
-		          </li>
-		          <li class="nav-item">
-		            <a class="nav-link" href="#" style="text-align: end;">로그아웃</a>
-		          </li>
-		          <hr>
-		      </div>
-		    </div>
-		</nav>
-		<nav class="navbar navbar-expand-lg bg-warning">
-		    <a class="navbar-brand" href="#"></a>
-		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-		      <span class="navbar-toggler-icon"></span>
-		    </button>
-		    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		      <div class="navbar-nav">
-		        <a class="nav-link active" aria-current="page" href="#">Home</a>
-		        <a class="nav-link" href="#">코드그릅관리</a>
-		        <a class="nav-link" href="#">코드관리</a>
-		        <a class="nav-link disabled">회원관리</a>
-		      </div>
-		    </div>
-		</nav>
-		<img src="./image/kbcar.jpg" class="rounded mx-auto d-block" alt="...">
-		<!-- 회원검색 -->
-		<div class="container border px">
-			<div class="row p-2">
-				<div class="col">
-					<select class="form-select" aria-label="Default select example">
-						<option selected>삭제여부</option>
-						<option value="삭제">삭제</option>
-						<option value="미삭제">미삭제</option>
-					</select>
-				</div>
-				<div class="col">
-					<select class="form-select" aria-label="Default select example">
-						<option selected>날짜</option>
-						<option value="가입일">가입일</option>
-						<option value="수정일">수정일</option>
-						<option value="생일">생일</option>
-					</select>
-				</div>
-				<div class="col mt-1">
-					<input type="text" id="DateStar" value="시작일" class="form-control form-control-sm hasDatepicker" autocomplete="off"	>
-				</div>
-				<div class="col mt-1">
-					<input type="text" id="DateEnd" value="종료일" class="form-control form-control-sm hasDatepicker" autocomplete="off"	>
-				</div>
-				<div class="row row-cols-sm-6">
-					<div class="col p-2">
+		 <div class="container-md">
+			<nav class="navbar sticky-top">
+			    <a class="navbar-brand" href="#">
+			    	<image alt="" src="./image/kbcar.jpg" width="70px">
+			    </a>
+			    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			      <div class="offcanvas-header">
+			        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+			        	<image alt="" src="./image/kbcar.jpg" width="100px">
+		        	</h5>
+			        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			      </div>
+			      <div class="offcanvas-body">
+			        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+			          <li class="nav-item">
+			            <a class="nav-link active" aria-current="page" href="#">
+			            	<image alt="" src="./image/person.png" width="100x">
+		            	</a>
+			          </li>
+			          <hr>
+			          <li class="nav-item">
+			            <a class="nav-link" href="#" style="text-align: end;">로그인</a>
+			          </li>
+			          <li class="nav-item">
+			            <a class="nav-link" href="#" style="text-align: end;">로그아웃</a>
+			          </li>
+			          <hr>
+			      </div>
+			    </div>
+			</nav>
+			<nav class="navbar navbar-expand-lg bg-warning">
+			    <a class="navbar-brand" href="#"></a>
+			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			      <div class="navbar-nav">
+			        <a class="nav-link active" aria-current="page" href="#">Home</a>
+			        <a class="nav-link" href="#">코드그릅관리</a>
+			        <a class="nav-link" href="#">코드관리</a>
+			        <a class="nav-link disabled">회원관리</a>
+			      </div>
+			    </div>
+			</nav>
+			<img src="./image/kbcar.jpg" class="rounded mx-auto d-block" alt="...">
+			<!-- 회원검색 -->
+			<div class="container border px">
+				<div class="row p-2">
+					<div class="col">
 						<select class="form-select" aria-label="Default select example">
-							<option selected>검색구분</option>
-							<option value="번호">번호</option>
-							<option value="이름">이름</option>
-							<option value="아이디">아이디</option>
-							<option value="회원번호">회원번호</option>
+							<option selected>삭제여부</option>
+							<option value="삭제">삭제</option>
+							<option value="미삭제">미삭제</option>
 						</select>
 					</div>
-					<div class="col p-1">
-						<div class="form-floating mb-3">
-						  <input onkeyup="filter()" type="text" class="form-control" id="value" placeholder=" search">
-						  <label for="floatingInput"> search</label>
-						</div>
+					<div class="col">
+						<select class="form-select" aria-label="Default select example">
+							<option selected>날짜</option>
+							<option value="가입일">가입일</option>
+							<option value="수정일">수정일</option>
+							<option value="생일">생일</option>
+						</select>
 					</div>
-					<div>
-						<button type="button" class="btn btn-promary btn-sm border p-1 mt-3" >
-							<i class="fa-solid fa-magnifying-glass"></i>
-						</button>
+					<div class="col mt-1">
+						<input type="text" id="DateStar" value="시작일" class="form-control form-control-sm hasDatepicker" autocomplete="off"	>
+					</div>
+					<div class="col mt-1">
+						<input type="text" id="DateEnd" value="종료일" class="form-control form-control-sm hasDatepicker" autocomplete="off"	>
+					</div>
+					<div class="row row-cols-sm-6">
+						<div class="col p-2">
+							<select class="form-select" aria-label="Default select example">
+								<option selected>검색구분</option>
+								<option value="번호">번호</option>
+								<option value="이름">이름</option>
+								<option value="아이디">아이디</option>
+								<option value="회원번호">회원번호</option>
+							</select>
+						</div>
+						<div class="col p-1">
+							<div class="form-floating mb-3">
+							  <input onkeyup="filter()" type="text" class="form-control" id="value" placeholder=" search">
+							  <label for="floatingInput"> search</label>
+							</div>
+						</div>
+						<div>
+							<button type="button" class="btn btn-promary btn-sm border p-1 mt-3" >
+								<i class="fa-solid fa-magnifying-glass"></i>
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- 회원리스트 -->
-		<div class="container">
+			<!-- 회원리스트 -->
 			<table class="table table-hover">
 				<tr class="table-warning sear">
 					<th>
@@ -178,6 +177,7 @@
 					<td>nayong@naver.com</td>
 					<td>1999.03.22</td>
 				</tr>
+				<tr class="search">
 					<td>
 						<input type="checkbox" name="check">
 					</td>
@@ -189,7 +189,8 @@
 					<td>서울시 서초구 반포동</td>
 					<td>menam@nate.com</td>
 					<td>1998.10.12</td>
-				</tr class="search">
+				</tr>
+				<tr class="search">
 					<td>
 						<input type="checkbox" name="check">
 					</td>
@@ -257,7 +258,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
 	</form>
 	
 	<script type="text/javascript">
