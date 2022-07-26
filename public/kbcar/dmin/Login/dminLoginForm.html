@@ -9,31 +9,45 @@
 <body>
 	
 	<!-- start -->
-	  <div class="container-fluid text-center">
-             <div class="row align-items-center">
-            	<div class="col">
+	  <div class="container text-center">
+            <div class="row">
+            	<div class="col-12">
             		<img alt="로그인 이미지" src="../images/loginbg.png">
             	</div>
-            </div>
-            <div class="col">
-            	<span>아이디</span>
-            </div>
-            <div class="col-3">
-            	<div class="form-floating mb-3">
-				  <input type="email" class="form-control" id="loginMId" placeholder="사원번호">
-				  <label for="floatingInput">사원번호</label>
+            	<div class="col-4 offset-4 mb-3">
+            		<input type="text" class="form-control" id="id" placeholder="아이디">
+            	</div>
+            	<div class="col-4 offset-4 mb-3">
+            		<input type="text" class="form-control" id="pw" placeholder="비밀번호">
+            	</div>
+            	<div class="col-2 offset-4 form-check form-switch">
+				  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+				  <label class="form-check-label" for="flexSwitchCheckDefault">로그인유지</label>
+				</div>
+				<div class="col-3 px-0 mb-3">
+					<button type="button" class="btn btn-outline-warning">로그인</button>
+				</div>
+			<div class="row">
+				<div class="col-1 offset-4">
+					<button type="button" class="btn btn-outline-warning">ID찾기</button>
+				</div>
+				<div class="col-1 offset-1">
+					<button type="button" class="btn btn-outline-warning">Pw찾기</button>
+				</div>
+				<div class="col-1">	
+					<button type="button" class="btn btn-outline-warning">로그인</button>
 				</div>
 			</div>
-			 <div class="col">
-			 	<span>비밀번호</span>
-		 	</div>
-	 		<div class="col-3">
-            	<div class="form-floating mb-3">
-				  <input type="email" class="form-control" id="loginMId" placeholder="비밀번호">
-				  <label for="floatingInput">비밀번호</label>
-				</div>
+			<div class="col mt-5 mb-3">
+				<span>SNS계정으로 로그인</span>
 			</div>
-			
+			<div class="col-12">
+				<img alt="네이버로그인" src="../images/nlogin.jpg">
+			</div>	
+			<div class="col-12">
+				<img alt="카카오로그인" src="../images/klogin.png">
+			</div>	
+		</div>
 	</div>
 	
 	
