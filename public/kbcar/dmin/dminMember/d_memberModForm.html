@@ -1,149 +1,172 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Bootstrap demo</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-	<style>
-	</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap demo</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
 	
 	<!-- start -->
-	<div class="h-25"></div>
-	<div class="container">
-		<div class="row">
-		<img alt="" src="../images/cUpListbg.jpg" height="350px">
-		</div>
-		<br>
-		<small style="margin: 1em; font-famlily: '나눔스퀘어라운드 Regular'; color: red;">필수정보</small>
-		<div>
-	  		<table class="table align-middle">
-		  <!-- 이름 -->
-		  		<tr>
-		  			<th>
-		  				<div class="row">
-		  					<div class="col">
-		  						<input type="text" name="mName" id="mName" value class="form-control" placeholder="이름"
-		  						aria-label="First name" style="border-color:white;" autocomplete="off">
-		  					</div>
-		  				</div>
-	  				</th>
-	  				<!-- 아이디 -->
-	  				<th>
-		  				<div class="row">
-		  					<div class="col">
-		  						<input type="text" name="mID" id="mID" value class="form-control" placeholder="아이디"
-		  						aria-label="first name" style="border-color:white;" autocomplete="off">
-		  					</div>
-		  				</div>
-	  				</th>
-  				</tr>
-  				<!-- 비밀번호 -->
-  				<tr>
-  					<td style="text-align: center;">			 			 	
-			   			<input type="password" name="mvmmPassword" id="mvmmPassword" value="" class="form-control pw" placeholder="비밀번호" style="border-color:white;" autocomplete="off">
-						<span id="alert-success" style="display: none; color: blue; text-align: left;">비밀번호가 일치합니다.</span>
-						<span id="alert-danger" style="display: none; color: red; text-align: left;">비밀번호가 일치하지 않습니다.</span>		  			
-	  				</td>
-  				
-  				<!-- 비밀번호확인 -->
-	  				<td>
-	   			 		<input type="password" id="mvmmPassword2" value="" class="form-control pw" placeholder="비밀번호확인" aria-label="First name" style="border-color:white;" autocomplete="off">
-		  			</td>
-				</tr>
-				
-				<!-- 이메일 -->
-				<tr>
-					<td>
-						<input type="text" class="form-control" name="mvmeEmailAccount" value="" placeholder="이메일 계정" style="border-color:white; display:inline-block;" autocomplete="off">
-					</td>
-					<td>
-						<select id="mvmeEmailDomainCd" name="mvmeEmailDomainCd" class="form-select">
-							<option value="">
-								::선택::
-							</option>
-							<option value="16"
-								>naver.com
-							</option>
-							<option value="17"
-								>hanmail.net
-							</option>
-							<option value="18"
-								>google.com
-							</option>
-							<option value="19"
-								>직접입력
-							</option>
-						</select>						
-					</td>
-				</tr>
-			</table>
-		</div>
-	</div>
-	<!-- 회사정보 -->
-	<div class="container my-wrap" style="font-family: '나눔스퀘어라운드 Regular';">
-		<div class="accordion">
-			<h2 class="accordion-header" id="headingTwo">
-			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-	        	회사 정보
-	        </button>
-		</h2>
-		<div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-				<div class="accordion-body">
-					<div class="table" style="font-family: '나눔스퀘어라운드 Regular';">
-						<table class="table align-middle">
-							<!--사업자명-->
-							<tr>
-					  			<th>
-					  				<div class="row">
-					  					<div class="col">
-					  						<input type="text" name="masterName" id="masterName" value class="form-control" placeholder="사업자명"
-					  						aria-label="First name" style="border-color:white;" autocomplete="off">
-					  					</div>
-					  				</div>
-				  				</th>
-				  				<!--사업자번호-->
-				  				<th>
-					  				<div class="row">
-					  					<div class="col">
-					  						<input type="text" name="materNumber" id="masterNumber" value class="form-control" placeholder="사업자번호"
-					  						aria-label="first name" style="border-color:white;" autocomplete="off">
-					  					</div>
-					  				</div>
-				  				</th>
-			  				</tr>
-			  				<tr>
-			  					<!-- 법인명 -->
-					  			<th>
-					  				<div class="row">
-					  					<div class="col">
-					  						<input type="text" name="cName" id="cName" value class="form-control" placeholder="법인명"
-					  						aria-label="First name" style="border-color:white;" autocomplete="off">
-					  					</div>
-					  				</div>
-				  				</th>
-				  				<!--회사번호-->
-				  				<th>
-					  				<div class="row">
-					  					<div class="col">
-					  						<input type="text" name="cNumber" id="cNumber" value class="form-control" placeholder="회사번호"
-					  						aria-label="first name" style="border-color:white;" autocomplete="off">
-					  					</div>
-					  				</div>
-				  				</th>
-			  				</tr>
-						</table>
+	<form method="post" action="./memberList2.html">
+		<nav class="navbar sticky-top">
+		    <a class="navbar-brand" href="#">
+		    	<image alt="" src="../images/kbcar.jpg" width="70px">
+		    </a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+		      <div class="offcanvas-header">
+		        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+		        	<image alt="" src="../images/listBg.jpg" width="100px">
+	        	</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		      </div>
+		      <div class="offcanvas-body">
+		        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+		          <li class="nav-item">
+		            <a class="nav-link active" aria-current="page" href="#">
+		            	<image alt="" src="./image/person.png" width="100x">
+	            	</a>
+		          </li>
+		          <hr>
+		          <li class="nav-item">
+		            <a class="nav-link" href="#" style="text-align: end;">로그인</a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" href="#" style="text-align: end;">로그아웃</a>
+		          </li>
+		          <hr>
+		      </div>
+		    </div>
+		</nav>
+		<nav class="navbar navbar-expand-lg bg-warning">
+		    <a class="navbar-brand" href="#"></a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		      <div class="navbar-nav">
+		        <a class="nav-link active" aria-current="page" href="#">Home</a>
+		        <a class="nav-link" href="#">코드그릅관리</a>
+		        <a class="nav-link" href="#">코드관리</a>
+		        <a class="nav-link disabled">회원관리</a>
+		      </div>
+		    </div>
+		</nav>
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-md-2">
+					<image alt="" src="../images/cUpListbg.jpg" width="300px"></image>
+				</div>
+				<div class="col-md-2 mt-5 px-0">
+					<p class="fs-1">회원가입</p>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-2">
+					<div class="form-floating mb-3">
+						<input type="text" class="form-control" id="ID" placeholder="성">
+						<label for="floatingInput">성</label>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="form-floating mb-3">
+						<input type="text" class="form-control" id="ID" placeholder="이름">
+						<label for="floatingInput">이름</label>
 					</div>
 				</div>
 			</div>
-			<div class="d-grid gap-2 col-6 mx-auto">
-			  <button class="btn btn-outline-warning" type="button">회원가입</button>
+			<div class="row justify-content-center">
+				<div class="col-md-4">
+					<div class="form-floating mb-3">
+					  <input type="ID" class="form-control" id="ID" placeholder="ID">
+					  <label for="floatingInput">아이디</label>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-4">
+					<div class="form-floating">
+					  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+					  <label for="floatingPassword">비밀번호</label>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-4">
+					<div class="form-floating mb-1 mt-3" >
+					  <input type="passwordre" class="form-control" id="passwordre" placeholder="Passwordre">
+					  <label for="floatingInput">비밀번호 확인</label>
+			   	   </div>
+			   </div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-2">
+					<div class="form-floating mt-3">
+						<input type="text" class="form-control" id="floatingPassword" placeholder="인증번호입력">
+						<label for="floatingEmail">이메일</label>
+					</div>
+				</div>
+				<div class="col-md-2 mt-4 btn-group">
+					  <button type="button" class="btn btn-outline-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+					    @Email
+					  </button>
+					  <ul class="dropdown-menu">
+					    <li><a class="dropdown-item" href="#">naver.com</a></li>
+					    <li><a class="dropdown-item" href="#">daum.net</a></li>
+					    <li><a class="dropdown-item" href="#">gmail.com</a></li>
+					    <li><a class="dropdown-item" href="#">nate.com</a></li>
+					  </ul>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-2 mt-4 btn-group">
+					  <button type="button" class="btn btn-outline-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+					    010
+					  </button>
+					  <ul class="dropdown-menu">
+					    <li><a class="dropdown-item" href="#">선택</a></li>
+					    <li><a class="dropdown-item" href="#">010</a></li>
+					    <li><a class="dropdown-item" href="#">016</a></li>
+					    <li><a class="dropdown-item" href="#">017</a></li>
+					  </ul>
+				</div>
+				<div class="col-md-2">
+					<div class="form-floating mt-3">
+					  <input type="text" class="form-control" id="floatingPassword" placeholder="callnumber">
+					  <label for="floatingPassword">전화번호</label>
+				  </div>
+			  </div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-2 form-floating mt-3">
+					<input type="text" class="form-control" id="floatingPassword" placeholder="인증번호입력">
+					<label for="floatingadress">우편번호</label>
+				</div>
+				<div class="col-md-2 mt-3 btn-group">
+					<button type="button" class="btn btn-outline-warning btn-lg">우편번호</button>
+				</div>
+			</div>
+				<div class="row justify-content-center">
+				<div class="col-md-4">
+					<div class="form-floating mt-3">
+					  <input type="text" class="form-control" id="floatingPassword" placeholder="callnumber">
+					  <label for="floatingaddress">주소</label>
+				  </div>
+			  </div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-2 p-4 offset-1 px-0">	
+					  <button type="button" class="btn btn-outline-warning">수정하기</button>
+					  <button type="button" class="btn btn-outline-warning">목록</button>
+				</div>
 			</div>
 			<div class="row justify-content-center">
 				<div class="col text-center">
-					<br><image alt="" src="../images/kbfoot.png"></image>
+					<br><image alt="" src="./image/kbcarmark.png"></image>
 					<br>
 					<br>이용약관 ㅣ 개인정보처리방침 ㅣ 위치기반서비스 이용약관
 					<br>
@@ -157,8 +180,14 @@
 					<br>COPYRIGHT 2018 KB CAPITAL.CO.,LTD. ALL RIGHTS RESERVED.
 				</div>
 			</div>
-				
+		</div>
+	</form>
+		
+	
 	<!-- end -->
+	
+	
+	
 	<script src="https://kit.fontawesome.com/df50a53180.js" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

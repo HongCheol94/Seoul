@@ -1,18 +1,145 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap demo</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap demo</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<style>
+	</style>
 </head>
 <body>
 	
 	<!-- start -->
-	<form method="post" action="./memberList2.html">
-		<div class="container-fluid">
-			<div class="row">
+	<div class="h-25"></div>
+	<div class="container">
+		<div class="row">
+		<img alt="" src="../images/d_dealermod.png" height="350px">
+		</div>
+		<br>
+		<small style="margin: 1em; font-famlily: '나눔스퀘어라운드 Regular'; color: red;">필수정보</small>
+		<div>
+	  		<table class="table align-middle">
+		  <!-- 이름 -->
+		  		<tr>
+		  			<th>
+		  				<div class="row">
+		  					<div class="col">
+		  						<input type="text" name="mName" id="mName" value class="form-control" placeholder="이름"
+		  						aria-label="First name" style="border-color:white;" autocomplete="off">
+		  					</div>
+		  				</div>
+	  				</th>
+	  				<!-- 아이디 -->
+	  				<th>
+		  				<div class="row">
+		  					<div class="col">
+		  						<input type="text" name="mID" id="mID" value class="form-control" placeholder="아이디"
+		  						aria-label="first name" style="border-color:white;" autocomplete="off">
+		  					</div>
+		  				</div>
+	  				</th>
+  				</tr>
+  				<!-- 비밀번호 -->
+  				<tr>
+  					<td style="text-align: center;">			 			 	
+			   			<input type="password" name="mvmmPassword" id="mvmmPassword" value="" class="form-control pw" placeholder="비밀번호" style="border-color:white;" autocomplete="off">
+						<span id="alert-success" style="display: none; color: blue; text-align: left;">비밀번호가 일치합니다.</span>
+						<span id="alert-danger" style="display: none; color: red; text-align: left;">비밀번호가 일치하지 않습니다.</span>		  			
+	  				</td>
+  				
+  				<!-- 비밀번호확인 -->
+	  				<td>
+	   			 		<input type="password" id="mvmmPassword2" value="" class="form-control pw" placeholder="비밀번호확인" aria-label="First name" style="border-color:white;" autocomplete="off">
+		  			</td>
+				</tr>
 				
+				<!-- 이메일 -->
+				<tr>
+					<td>
+						<input type="text" class="form-control" name="mvmeEmailAccount" value="" placeholder="이메일 계정" style="border-color:white; display:inline-block;" autocomplete="off">
+					</td>
+					<td>
+						<select id="mvmeEmailDomainCd" name="mvmeEmailDomainCd" class="form-select">
+							<option value="">
+								::선택::
+							</option>
+							<option value="16"
+								>naver.com
+							</option>
+							<option value="17"
+								>hanmail.net
+							</option>
+							<option value="18"
+								>google.com
+							</option>
+							<option value="19"
+								>직접입력
+							</option>
+						</select>						
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!-- 회사정보 -->
+	<div class="container my-wrap" style="font-family: '나눔스퀘어라운드 Regular';">
+		<div class="accordion">
+			<h2 class="accordion-header" id="headingTwo">
+			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+	        	회사 정보
+	        </button>
+		</h2>
+		<div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					<div class="table" style="font-family: '나눔스퀘어라운드 Regular';">
+						<table class="table align-middle">
+							<!--사업자명-->
+							<tr>
+					  			<th>
+					  				<div class="row">
+					  					<div class="col">
+					  						<input type="text" name="masterName" id="masterName" value class="form-control" placeholder="사업자명"
+					  						aria-label="First name" style="border-color:white;" autocomplete="off">
+					  					</div>
+					  				</div>
+				  				</th>
+				  				<!--사업자번호-->
+				  				<th>
+					  				<div class="row">
+					  					<div class="col">
+					  						<input type="text" name="materNumber" id="masterNumber" value class="form-control" placeholder="사업자번호"
+					  						aria-label="first name" style="border-color:white;" autocomplete="off">
+					  					</div>
+					  				</div>
+				  				</th>
+			  				</tr>
+			  				<tr>
+			  					<!-- 법인명 -->
+					  			<th>
+					  				<div class="row">
+					  					<div class="col">
+					  						<input type="text" name="cName" id="cName" value class="form-control" placeholder="법인명"
+					  						aria-label="First name" style="border-color:white;" autocomplete="off">
+					  					</div>
+					  				</div>
+				  				</th>
+				  				<!--회사번호-->
+				  				<th>
+					  				<div class="row">
+					  					<div class="col">
+					  						<input type="text" name="cNumber" id="cNumber" value class="form-control" placeholder="회사번호"
+					  						aria-label="first name" style="border-color:white;" autocomplete="off">
+					  					</div>
+					  				</div>
+				  				</th>
+			  				</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="d-grid gap-2 col-6 mx-auto">
+			  <button class="btn btn-outline-warning" type="button">회원가입</button>
 			</div>
 			<div class="row justify-content-center">
 				<div class="col text-center">
@@ -30,14 +157,8 @@
 					<br>COPYRIGHT 2018 KB CAPITAL.CO.,LTD. ALL RIGHTS RESERVED.
 				</div>
 			</div>
-		</div>
-	</form>
-		
-	
+				
 	<!-- end -->
-	
-	
-	
 	<script src="https://kit.fontawesome.com/df50a53180.js" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
