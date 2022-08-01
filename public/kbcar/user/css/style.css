@@ -52,3 +52,41 @@
 	dadding: 0 30px;
 	color: #252525;
 }
+
+.navigation-util {
+  position: relative;
+  display: inline-block;
+  padding-left: 25px;
+  color: #454545;
+}
+
+.navigation-util__item {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 25px;
+  border: 1px solid transparent;
+  margin: 0 10px;
+  padding: 0 5px;
+  color: #454545;
+  }
+  
+
+.icon-common {
+  position: relative;
+  top: -1px;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 4px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+
+@import './header';
+@import './navigation';
+@import './breadcrumb';
+@import './content';
+@import './layer-popup';
+@import './footer';
