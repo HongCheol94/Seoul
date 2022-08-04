@@ -5,19 +5,96 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Bootstrap demo</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link href="../css/buy.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	
 	<!-- start -->
+	
+	<!-- 사이드 메뉴 -->
+	
 	<div class="common-left-area">
 		<h1 class="logo">
 			<a href="/public/main.kbc">
 				<img src="../images/kblogo.png">
 			</a>
 		</h1>
-	</div>
-
+		<ul class="nav flex-column">
+		  <li class="nav-item">
+		    <a class="nav-link active top-menu" aria-current="page" href="#" style="color:black;">
+		    	<p class="fs-3"><i class="fa-solid fa-magnifying-glass"></i>검색</p>
+	    	</a>
+		  </li>
+		  <li class="nav-item mt-4">
+		    <a class="nav-link top-menu" href="#" style="color:blue;">
+		    	<p class="fs-3"><i class="fa-solid fa-cart-shopping"></i>살때</p>
+	    	</a>
+		  </li>
+		  <li class="nav-item mt-4">
+		    <a class="nav-link top-menu" href="#" style="color:red;">
+	    		<p class="fs-3"><i class="fa-solid fa-copyright"></i>팔때</p>
+    		</a>
+		  </li>
+	      <li class="nav-item mt-4">
+		    <a class="nav-link top-menu" href="#" style="color:orange">
+	    		<p class="fs-3"><i class="fa-solid fa-chart-line"></i>시세</p>
+    		</a>
+		  </li>
+		  <li class="nav-item mt-4">
+		    <a class="nav-link top-menu" href="#">
+		    	<p class="fs-3"><i class="fa-solid fa-gift"></i>혜택</p>
+	    	</a>
+		  </li>
+		  <li class="nav-item mt-4">
+		    <a class="nav-link top-menu" href="#" style="color:green;">
+		    	<p class="fs-3"><i class="fa-solid fa-circle-info"></i>안내</p>
+	    	</a>
+		  </li>
+		</ul>
+		<div style="height:70px">
 		
+		</div>
+		<div>
+			<img src="../images/sideHero.png">
+		</div>
+	</div>
+	
+	<!-- 중앙 상단 나브바 -->
+	
+	<nav class="navbar bg-light">
+	  <div class="container-fluid">
+	    <form class="d-flex mx-auto" role="search">
+	      <input class="form-control me-2" type="search" placeholder="164.266대의 차량이 있습니다." aria-label="Search">
+	      <button class="btn btn-outline-success" type="submit">Search</button>
+	    </form>
+	    <ul class="nav justify-content-end">
+		  <li class="nav-item">
+		    <a class="nav-link active" aria-current="page" href="#" style="color: green">
+		    	<p class="fs-3">
+		    		<i class="fa-solid fa-user"></i>
+	    		</p>	
+	    	</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#" style="color:black">
+		    	<p class="fs-4">
+		    		<i class="fa-solid fa-right-to-bracket"></i>
+	    		</p>
+	    	</a>
+		  </li>
+		</ul>
+	  </div>
+	</nav>
+	
+	<!-- 사이드 드롭다운 -->
+
+	<div class=container>
+		<div class="row">
+			<div class="col">
+				
+			</div>
+		</div>
+	</div>
 	
 	
 	<!-- end -->
