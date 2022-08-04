@@ -1,0 +1,17 @@
+.common-left-area {
+    position: fixed;
+    float: left;
+    width: 160px;
+    height: 100%;
+    background: #fff;
+    padding: 0 0 50px;
+    z-index: 6;
+}
+
+.common-left-area .logo {
+    position: relative;
+    width: 159px;
+    padding-bottom: 85px;
+    background: #fff;
+    z-index: 10;
+}

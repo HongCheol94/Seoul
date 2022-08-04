@@ -1,0 +1,26 @@
+.foot {
+			background-color: #FDFDFD;
+			border-top: 1px solid border-color #F3F3F3;;
+		}
+
+.main-hero {
+    position: absolute;
+    right: 0;
+    top: -495px;
+    width: 195px;
+    height: 495px;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.top-menu {
+	text-decoration: none;
+	color:black;	
+
+}
+
+.under_menu {
+    position: relative;
+    width: 1260px;
+    margin: 0 auto;
+}
