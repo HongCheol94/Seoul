@@ -1,14 +1,19 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Bootstrap demo</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<<<<<<< HEAD
 	<link href="../css/login.css">
 
+=======
+	<link href="../css/style.css">
+>>>>>>> branch 'main' of https://github.com/HongCheol94/seoul.git
 </head>
 <body>
+<<<<<<< HEAD
 	<div class="container">
 		<div class="row g-4">
 			<div class="col-2 text-center">
@@ -33,13 +38,169 @@
 						</li>
 					  </ul>
 				</div> 
-			</div>
+=======
+	
+	<!-- 상단목록 -->
+	<nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+	  <ol class="breadcrumb">
+	  	<li class="breadcrumb-item col-1"><a href="#"><image src="../images/kblogo.png"></a></li>
+	    <li class="breadcrumb-item col-1 offset-4 mt-4">
+	    	<a href="#">
+	    		<p class="fs-3">살때</p>
+	   		</a>
+	   	</li>
+	    <li class="breadcrumb-item active col-1 mt-4" aria-current="page">
+	    	<a href="#">
+	    		<p class="fs-3">팔때</p>
+	   		</a>
+		</li>
+	    <li class="breadcrumb-item active col-1 mt-4" aria-current="page">
+	    	<a href="#">
+	   			<p class="fs-3">시세</p>
+			</a>
+		</li>
+	    <li class="breadcrumb-item active col-1 mt-4" aria-current="page">
+	    	<a href="#">
+	    	<p class="fs-3">혜택</p></a></li>
+	    <li class="breadcrumb-item active col-1 mt-4" aria-current="page">
+	    	<a href="#">
+	    	<p class="fs-3">안내</p></a></li>
+	    <li class="breadcrumb-item active col-1 mt-1" aria-current="page">
+	    	<a href="#">
+	    		<i class="fa-solid fa-user"></i>
+	    			<p class="fs-4">김홍철님</p>
+			</a>
+		</li>
+	    <li class="breadcrumb-item active col-1 mt-1" aria-current="page">
+	    	<a href="#">
+	    		<i class="fa-solid fa-right-from-bracket"></i>
+	    			<p class="fs-4">로그아웃</p>
+			</a>
+		</li>
+	  </ol>
+	</nav>
+	<div class="container-fluid">
+	
+	<!-- 메인광고 -->
+		<div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active" data-bs-interval="1000">
+		      <img src="../images/mainCarousel(1).jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item" data-bs-interval="2000">
+		      <img src="../images/mainCarousel(2).jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item" data-bs-interval="3000">
+		      <img src="../images/mainCarousel(3).jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item" data-bs-interval="4000">
+		      <img src="../images/mainCarousel(4).jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item" data-bs-interval="5000">
+		      <img src="../images/mainCarousel(5).jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="../images/mainCarousel(6).jpg" class="d-block w-100" alt="...">
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
 		</div>
+		
+		<!-- 모델검색 -->
+		<div class="row border mt-5">
+			<div class="col-3 mt-3">
+			<select class="form-select" aria-label="Default select example">
+				  <option selected>제조사</option>
+				  <option value="1">One</option>
+				  <option value="2">Two</option>
+				  <option value="3">Three</option>
+			</select>
+>>>>>>> branch 'main' of https://github.com/HongCheol94/seoul.git
+			</div>
+<<<<<<< HEAD
+		</div>
+=======
+			<div class="col-3 mt-3">
+			<select class="form-select" aria-label="Default select example">
+				  <option selected>대표모델</option>
+				  <option value="1">One</option>
+				  <option value="2">Two</option>
+				  <option value="3">Three</option>
+			</select>
+			</div>
+			<div class="col-3 mt-3">
+			<select class="form-select" aria-label="Default select example">
+				  <option selected>세부모델</option>
+				  <option value="1">One</option>
+				  <option value="2">Two</option>
+				  <option value="3">Three</option>
+			</select>
+			</div>
+			<div class="d-grid gap-2 col-3 mx-auto mt-3">
+			  <button class="btn btn-outline-warning" type="button">검색</button>
+			</div>
+			<div class="col-3">
+				<input type="text" placeholder="내용을 입력해주세요" class="form-control">
+			</div>
+			<div class="col-3">
+				<button type="button" class="btn btn-outline-secondary">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</button>
+			</div>	
+		</div>
+		<!-- 추천차량 -->
+		<div class="row mt-5">
+		  <div class="col-sm-3">
+		    <div class="card">
+		      <div class="card-body">
+		        <h5 class="card-title">Special title treatment</h5>
+		        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+		        <a href="#" class="btn btn-primary">Go somewhere</a>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col-sm-3">
+		    <div class="card">
+		      <div class="card-body">
+		        <h5 class="card-title">Special title treatment</h5>
+		        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+		        <a href="#" class="btn btn-primary">Go somewhere</a>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col-sm-3">
+		    <div class="card">
+		      <div class="card-body">
+		        <h5 class="card-title">Special title treatment</h5>
+		        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+		        <a href="#" class="btn btn-primary">Go somewhere</a>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div style="float:right">
+			<img src="../images/mainionic.jpg">
+		</div>
+		
+	
+>>>>>>> branch 'main' of https://github.com/HongCheol94/seoul.git
 	</div>
+<<<<<<< HEAD
 
 
 
 	
+=======
+	
+	<!-- end -->
+>>>>>>> branch 'main' of https://github.com/HongCheol94/seoul.git
 	<script src="https://kit.fontawesome.com/df50a53180.js" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

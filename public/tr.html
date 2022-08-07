@@ -1,42 +1,89 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
-<title>웹개발 메모장 : 자바스크립트 : 다음 우편번호 검색 초간단 예제</title>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Form</title>
+    <style type="text/css">
+    	.out {
+        border: 5px ridge;
+      }
+	
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
+    <!-- start -->
+    
+	<div class="container">
+        <div class="row">
+        	<div class="col out">
+	            <div class="row text-center">
+	                <div class="col-4 mb-5">
+	                	<span class="fs-1 fw-bold"><i>your<br>Company<br>Logo</i></span>
+	                    <!-- <img class="avatar-img rounded-circle shadow" src="../../../html_tr2/recruit/image/diano.jpg" alt="avatar" style="width: 150px;"> -->
+	                </div>
+	            </div>
+	            <div class="row">
+	                <div class="col-4 mb-3">
+	                    <input type="text" class="form-control" id="id" placeholder="id" required>
+	                </div>
+	            </div>
+	            <div class="row">
+	                <div class="col-4 mb-3">
+	                    <input type="password" class="form-control" id="id" placeholder="Password" required>
+	                </div>
+	            </div>
+	            <div class="row">
+	                <div class="col-2 form-switch mb-3">
+	                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+	                    <label class="form-check-label" for="flexSwitchCheckChecked">Auto login</label>
+	                </div>
+	            </div>
+	            <div class="row">
+	                <div class="col-4 d-grid mb-3">
+	                    <button type="button" class="btn btn-secondary">login</button>
+	                </div>
+	            </div>
+	            <div class="row">
+	                <div class="col-4 d-grid">
+	                    <a class="fs-6" mt-2 mt-sm-0" href="#">Find Id/Password</a>
+	                </div>
+	           </div>
+	           <div class="row">
+	                <div class="col-4 mb-2">
+	                	<hr>
+	                </div>
+	           </div> 
+	           <div class="row">
+	                <div class="col-4 d-grid mb-3">
+	                    <button type="button" class="btn btn-success">Naver</button>
+	                </div>
+	           </div>
+	           <div class="row">
+	                <div class="col-4 d-grid mb-3">
+	                    <button type="button" class="btn btn-warning">Kakao</button>
+	                </div>
+	           </div>
+	           <div class="row">
+	                <div class="col-4 d-grid mb-3">
+	                    <button type="button" class="btn btn-danger">Google</button>
+	                </div>
+	           </div>
+	           <div class="row">
+	                <div class="col-4 d-grid mb-3">
+	                    <button type="button" class="btn btn-primary">Facebook</button>
+	                </div>
+	       	   </div>
+			</div>
+		</div>
+	</div>
+     
+      
 
-<div style="text-align:center; margin:0 0 100px 0; background:#555; line-height:80px;">
-	<a style="color:#fff; font-weight:bold; font-family:tahoma; font-size:20pt;" href="https://ktsmemo.cafe24.com/s/dev/314" target="_blank">https://ktsmemo.cafe24.com/s/dev/314</a>
-</div>
-
-
-<!-- 예제 시작 -->
-
-<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-
-우편번호 : <input type="text" name="zip" style="width:80px; height:26px;" />
-<button type="button" style="width:60px; height:32px;" onclick="openZipSearch()">검색</button><br>
-주소 : <input type="text" name="addr1" style="width:300px; height:30px;" readonly /><br>
-상세 : <input type="text" name="addr2" style="width:300px; height:30px;" />
-
-<script>
-
-function openZipSearch() {
-	new daum.Postcode({
-		oncomplete: function(data) {
-			$('[name=zip]').val(data.zonecode); // 우편번호 (5자리)
-			$('[name=addr1]').val(data.address);
-			$('[name=addr2]').val(data.buildingName);
-		}
-	}).open();
-}
-
-</script>
-
-<!-- 예제 종료 -->
-
+    <!-- end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/1d32d56af5.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

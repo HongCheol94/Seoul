@@ -5,6 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Bootstrap demo</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<style>
+		.foot {
+		background-color: #FDFDFD;
+		border-top: 1px solid border-color #F3F3F3;;
+		}
+	</style>
 </head>
 <body>
 	
@@ -28,7 +34,7 @@
 			        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 			          <li class="nav-item">
 			            <a class="nav-link active" aria-current="page" href="#">
-			            	<image alt="" src="./image/person.png" width="100x">
+			            	<image alt="" src="../images/person.png" width="100x">
 		            	</a>
 			          </li>
 			          <hr>
@@ -57,24 +63,44 @@
 			    </div>
 			</nav>
 		<div class=container>
-			<div class="row">
-				<div class="col-9 offset-3 px-0">		
-					<img src="../images/cUpListbg.jpg"alt="...">
-				</div>
-			</div>
-			<div class="row border">
-				<div class="col-md-6 text-center border">
-					<span class="fs-1 fw-bold">
+			<div class="row pt-3">
+			  <div class="col-sm-6 text-center">
+			    <div class="card">
+			      <div class="card-body">
+			        <span class="card-title fs-1 fw-bold">
 						<i>딜러 리스트</i>
 					</span>
-					<img alt="딜러리스트이미지" src="../images/dlistbg.jpg">
-					<a href="" class="btn btn-warning mt-3">확인하기</a>					
-				</div>
-				<div class="col-md-6 text-center border">
-					<span class="fs-1 fw-bold"><i>회원 리스트</i></span>
-					<img alt="회원 리스트이미지" src="../images/clistbg.png">
-					<a href="" class="btn btn-warning mt-3">확인하기</a>					
-				</div>
+			        <p class="card-text">
+			        	<img alt="딜러리스트이미지" src="../images/dlistbg.jpg">
+		        	</p>
+			        <a href="../list/dealerList.html" class="btn btn-warning mt-3">확인하기</a>	
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 text-center">
+			    <div class="card">
+			      <div class="card-body">
+			       <span class="card-tittle fs-1 fw-bold">
+						<i>회원 리스트</i>
+					</span>
+			        <p class="card-text">
+			        	<img alt="회원 리스트이미지" src="../images/clistbg.png">
+		        	</p>
+			       <a href="../list/memberList.html" class="btn btn-warning mt-3">확인하기</a>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!-- 풋 -->
+			<div style="height:50px">
+				
+			</div>
+			<div class="foot">
+			<div class="col-12 text-center mb-3 pt-4">
+				<image alt="" src="../images/kbfoot.png"></image>
+			<div class="col-12 text-center mb-3">
+				<i>COPVRIGHT 2018 KB CAPITAL.CO.LTD.ALL RIGHTS RESERVED.</i>
+			</div>
 			</div>
 		</div>
 			
