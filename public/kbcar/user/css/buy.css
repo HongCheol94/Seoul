@@ -19,5 +19,7 @@
 .side-menu {
 	text-decoration: none;
 	
-
+}
+.clear {
+	clear: both;		
 }
