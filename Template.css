@@ -23,14 +23,27 @@
 
 
 main {
-  background: #84ffff;
+  background:   #9CD2F6;
   grid-area: main;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr;
+  grid-template-areas: 
+    "logo search user login"
+    "text zero  text2 text2"
+    "utext uzero utext2 utext3";
+  grid-gap: 0.2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #004d40;
+  text-align: center;
 }
 
 #sidebar {
-  background: #18ffff;
+  background:  #fff;
   grid-area: sidebar;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
