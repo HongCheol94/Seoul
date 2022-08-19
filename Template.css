@@ -3,16 +3,14 @@
   --main-padding: 5px;
 }
 
-.container {
+body {
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 1.5fr 1.2fr .8fr;
+  grid-template-columns: 0.08fr 1fr;
+  grid-template-rows: 2fr .2fr;
   grid-template-areas: 
-    "nav nav nav nav"
-    "sidebar main main main"
-    "sidebar content1 content2 content3"
-    "sidebar footer footer footer";
+    "sidebar main"
+    "footer footer";
   grid-gap: 0.2rem;
   font-family: "Inter", sans-serif;
   font-weight: 800;
@@ -21,54 +19,59 @@
   text-align: center;
 }
 
+header {
+  grid-area: sidebar;
+  background: white;
+}
 
 main {
-  background:   #9CD2F6;
   grid-area: main;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
+  background: blue;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 1.5fr 1.2fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.0fr 0.5fr;
   grid-template-areas: 
-    "logo search user login"
-    "text zero  text2 text2"
-    "utext uzero utext2 utext3";
+    "nav"
+    "content";
   grid-gap: 0.2rem;
-  font-family: "Inter", sans-serif;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #004d40;
-  text-align: center;
 }
 
-#sidebar {
-  background:  #fff;
-  grid-area: sidebar;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
-} 
+#nav {
+  grid-area: nav;
+  background: #9CD2F6;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr 0.5fr;
+  grid-template-areas: 
+    "header"
+    "center_info"
+    "text";
+}
 
-#content1 {
-  background: #6fffd2;
-  grid-area: content1;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
-} 
+.navbar {
+  grid-area: header;
+}
 
-#content2 {
-  background: #64ffda;
-  grid-area: content2;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
-} 
+.center_info {
+  grid-area: center_info;
+  align-items: center;
+}
 
-#content3 {
-  background: #73ffba;
-  grid-area: content3;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
-} 
+.center_text {
+  text-align: start;
+  margin-left: 20px;
+}
+
+.center_info img {
+  width: 500px;
+  float: right;
+  margin-right: 20px;
+}
+
+#content {
+  grid-area: content;
+  background: green;
+}
 
 footer {
   background: #1de9b6;
