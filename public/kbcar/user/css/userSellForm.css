@@ -29,5 +29,13 @@
 }
 
 ul {
-	list-style: none; 
+	list-style: none;
+}
+
+li {
+    margin-top: 30px;
+}
+
+.tcolor{
+	color: white;	
 }
