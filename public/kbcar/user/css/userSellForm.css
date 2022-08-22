@@ -21,19 +21,21 @@
 	
 }
 .clear {
-	clear: right;		
+	clear: both;		
 }
 
-.top-menu {
-	text-decoration: none;
-	color:black;	
-
+.top-bgcolor {
+	background: blue;	
 }
 
 ul {
-	list-style: none; 
+	list-style: none;
 }
 
 li {
-	float: left;	
+    margin-top: 30px;
+}
+
+.tcolor{
+	color: white;	
 }

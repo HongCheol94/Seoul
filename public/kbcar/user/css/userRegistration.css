@@ -16,24 +16,6 @@
     z-index: 10;
 }
 
-.side-menu {
-	text-decoration: none;
-	
-}
-.clear {
-	clear: right;		
-}
-
-.top-menu {
-	text-decoration: none;
-	color:black;	
-
-}
-
-ul {
-	list-style: none; 
-}
-
 li {
-	float: left;	
+    margin-top: 30px;
 }
