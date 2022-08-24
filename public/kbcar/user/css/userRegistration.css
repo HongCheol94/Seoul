@@ -19,3 +19,11 @@
 li {
     margin-top: 30px;
 }
+
+ul {
+	list-style: none;
+}
+
+td,th {
+    margin-top: 3pt;
+}
