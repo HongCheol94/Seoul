@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Bootstrap demo</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-	<link href="../css/memberModForm.css" rel="stylesheet">
+	<link href="../css/memberRegLogin.css" rel="stylesheet">
 </head>
 <body>
 	
@@ -114,10 +114,10 @@
 	</div>
 	<!-- 좌측메뉴 end -->
 	<nav>
-		<p class="fs-3">내정보</p>
+		<p class="fs-3">마이페이지</p>
 	</nav>
 	<main>
-	<!-- 수정 로그인-->
+		<!-- 회원정보	 -->
 		<div class="row main_MInfo">
 			<div class="col">
 				<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -131,90 +131,37 @@
 				<div class="tab-content" id="pills-tabContent">
 					<!-- 회원정보 내용 -->
 					<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-						<p class="fs-4 mb-4">꼭! 알아두세요!</p>
-						<p class="fs-5">● KB차차차는 고객님의 동의 없이 제3자에게 정보를 제공하지 않습니다.</p>
-						<div class="row mb-4 mt-5">
-							<div class="col-2">
-								<span class="fs-4">고객명</span>
-							</div>
+						<div class="row mt-5">
 							<div class="col">
-								<fieldset disabled>
-								<input type="text" id="disabledTextInput" class="form-control" placeholder="김홍철">
+								<span class="fs-6">회원님의 소중한 정보 보호를 위해
+									<br>현재 비밀번호를 확인해 주세요.
+								</span>
 							</div>
 						</div>
-						<div class="row mb-4">
-							<div class="col-2">
-								<span class="fs-4">휴대폰번호</span>
+						<div class="row mt-5">
+							<div class="col-12 mb-3">
+								<span class="fs=6">아이디</span>
 							</div>
 							<div class="col">
-								<fieldset disabled>
-								<input type="text" class="form-control" value="010-5318-9751">
+								<div class="form-floating mb-3">
+									<input type="id" class="form-control" id="floatingInput" placeholder="ID">
+									<label for="floatingInput">ID</label>
+								  </div>
 							</div>
 						</div>
-						<div class="row mb-4">
-							<div class="col-2">
-								<span class="fs-4">비밀번호</span>
+						<div class="row mt-2">
+							<div class="col-12 mb-3">
+								<span class="fs=6">비밀번호</span>
 							</div>
 							<div class="col">
-								<input type="password" class="form-control" value="*********">
-							</div>
-							<span class="fs-6 offset-2 text-start" style="color:gray">영문 대/소문자,숫자,특수문자('~!@#$%+=-만 허용)를 조합해서 입력해 주세요.(8~20자)</span>
-						</div>
-						<div class="row mb-4">
-							<div class="col-2">
-								<span class="fs-4">새로운 비밀번호 확인</span>
-							</div>
-							<div class="col">
-								<input type="text" class="form-control" value="*********">
+								<div class="form-floating mb-3">
+									<input type="password" class="form-control" id="floatingInput" placeholder="password">
+									<label for="floatingInput">password</label>
+								</div>
 							</div>
 						</div>
-						<div class="row mb-4">
-							<div class="col-2">
-								<span class="fs-4">이메일</span>
-							</div>
-							<div class="col">
-								<input type="eamil" class="form-control" value="appleMac">
-							</div>
-							<div class="col-1">
-								<span class="fs-4">@</span>
-							</div>
-							<div class="col">
-								<input type="eamil" class="form-control" value="naver.com">
-							</div>
-							<div class="col">
-								<select class="form-select" aria-label="Default select example">
-									<option>::직접입력::</option>
-									<option>naver.com</option>
-									<option>daum.com</option>
-									<option>nate.com</option>
-									<option>gmail.com</option>
-								</select>
-							</div>
-						</div>
-						<div class="row mb-4">
-							<div class="col">
-								<span class="fs-4">마케팅활용/
-									<br>수신동의(선택)</span>
-							</div>
-							<div class="col-10 mt-3" style="vertical-align: middle;">
-								<input type="radio" name="agree"><span class="fs-6">동의함</span>
-								<input type="radio" name="agree"><span class="fs-6">동의안함</span>
-								<p style="color:gray">우용한 이벤트,할인등 다양한 소식을 받아보세요.</p>
-							</div>
-						</div>
-						<div class="row mb-5">
-							<div class="col">
-								<span class="fs-4">회원탈퇴</span>
-							</div>
-							<div class="col-10">
-								<button type="button" class="btn btn-outline-danger btn-lg">회원탈퇴</button>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-6 offset-3">
-								<button class="btn btn-outline-warning btn-lg" type="button" style="--bs-btn-padding-y: 1rem; --bs-btn-padding-x: 10rem; --bs-btn-font-size: .75rem;">확인</button>
-								<button class="btn btn-outline-warning btn-lg" type="button"  style="--bs-btn-padding-y: 1rem; --bs-btn-padding-x: 10rem; --bs-btn-font-size: .75rem;">수정하기</button>
-							</div>
+						<div class="d-grid gap-2 col-12 mt-3 mx-auto">
+							<button class="btn btn-warning" type="button">확인</button>
 						</div>
 					</div>
 				</div>
@@ -253,7 +200,8 @@
 			</div>
 				<!-- SNS 로그인 설정 end	 -->
 		</div>
-	<!-- 수정 로그인 end -->
+	<!-- 회원정보 end -->
+        
 	</main>
 	<footer>
 		<div class="row mt-5">
