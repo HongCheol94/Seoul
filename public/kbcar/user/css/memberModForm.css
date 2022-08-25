@@ -19,10 +19,18 @@
     color: #004d40;
     text-align: center;
   }
-
+  nav {
+    text-align: start;
+    margin-top: 20pt;
+  }
   main {
     grid-area: main;
     background: white;
+  }
+
+  .main_MInfo {
+    text-align: start;
+    margin-top: 30pt;
   }
   
   #sidebar {
@@ -46,10 +54,11 @@
   }
   
   footer {
-    background: blue;
+    background: white;
     grid-area: footer;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    text-align: start;
   } 
   
   @media only screen and (max-width:550px) {
