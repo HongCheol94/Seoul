@@ -9,19 +9,6 @@
 <body>
 	
 	<!-- start -->
-	
-	<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Bootstrap demo</title>
-	<style type="text/css">
-	
-	</style>	
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-</head>
-<body>
 	<form method="post" action="./memberList2.html">
 		<!-- 상단목록 -->
 		 <div class="container-md">
@@ -75,9 +62,10 @@
 			    </div>
 			</nav>
 			<img src="../images/listbg.jpg" class="rounded mx-auto d-block" alt="...">
-			<!-- 회원검색 -->
-			<div class="container border px">
-				<div class="row p-2">
+			<span class="fs-2">코드 관리</span>
+			<!-- 코드검색 -->
+			<div class="container border px mt-3 mb-3">
+				<div class="row p-2 mt-3">
 					<div class="col">
 						<select class="form-select" aria-label="Default select example">
 							<option selected>삭제여부</option>
@@ -129,11 +117,15 @@
 					<th>
 						<input type="checkbox" name="check" value="selectAll" onclick="selectAll(this)">
 					</th>
-					<th>번호</th>
+					<th>#</th>
 					<th>코드그룹 코드</th>
 					<th>코드그룹 이름(한글)</th>
-					<th>코드그룹 이름(영문)</th>
-					<th>코드갯수</th>
+					<th>코드</th>
+					<th>대체코드</th>
+					<th>코드 이름 (한글)</th>
+					<th>코드 이름 (영문)</th>
+					<th>사용여부</th>
+					<th>순서</th>
 					<th>등록일</th>
 					<th>수정일</th>
 				</tr>
@@ -141,13 +133,16 @@
 					<td>
 						<input type="checkbox" name="check">
 					</td>
+					<td>106</td>
 					<td>1</td>
-					<td>00114</td>
-					<td class="sn">
-						<a href="../dminMember/d_memberView.html">code1</a>
-					</td>
+					<td>공통.디바이스1</td>
+					<td>1</td>
 					<td></td>
-					<td>0</td>
+					<td>웹-MS edge</td>
+					<td></td>
+					<td>Y</td>
+					<td>1</td>
+					<td></td>
 					<td></td>
 					<td></td>
 				</tr>
@@ -155,11 +150,15 @@
 					<td>
 						<input type="checkbox" name="check">
 					</td>
+					<td>105</td>
+					<td>1</td>
+					<td>공통.디바이스1</td>
 					<td>2</td>
-					<td>00564</td>
-					<td class="sn">code2</td>
 					<td></td>
-					<td>0</td>
+					<td>웹-크림기반 edge</td>
+					<td></td>
+					<td>Y</td>
+					<td>1</td>
 					<td></td>
 					<td></td>
 				</tr>
@@ -167,11 +166,15 @@
 					<td>
 						<input type="checkbox" name="check">
 					</td>
+					<td>104</td>
+					<td>1</td>
+					<td>공통.디바이스1</td>
 					<td>3</td>
-					<td>00264</td>
-					<td class="sn">code3</td>
 					<td></td>
-					<td>0</td>
+					<td>웹-오페라</td>
+					<td></td>
+					<td>Y</td>
+					<td>1</td>
 					<td></td>
 					<td></td>
 				</tr>
@@ -179,11 +182,15 @@
 					<td>
 						<input type="checkbox" name="check">
 					</td>
+					<td>103</td>
+					<td>1</td>
+					<td>공통.디바이스1</td>
 					<td>4</td>
-					<td>01038</td>
-					<td class="sn">code4</td>
 					<td></td>
-					<td>0</td>
+					<td>웹-크롬</td>
+					<td></td>
+					<td>Y</td>
+					<td>1</td>
 					<td></td>
 					<td></td>
 				</tr>
@@ -191,22 +198,95 @@
 					<td>
 						<input type="checkbox" name="check">
 					</td>
+					<td>102</td>
+					<td>1</td>
+					<td>공통.디바이스1</td>
 					<td>5</td>
-					<td>00342</td>
-					<td class="sn">code5</td>
 					<td></td>
-					<td>0</td>
+					<td>웹-익스</td>
+					<td></td>
+					<td>Y</td>
+					<td>1</td>
+					<td></td>
 					<td></td>
 				</tr>
 				<tr class="search">
 					<td>
 						<input type="checkbox" name="check">
 					</td>
+					<td>101</td>
+					<td>1</td>
+					<td>공통.디바이스1</td>
 					<td>6</td>
-					<td>00482</td>
-					<td class="sn">code6</td>
 					<td></td>
-					<td>0</td>
+					<td>웹-파이어폭스</td>
+					<td></td>
+					<td>Y</td>
+					<td>1</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="search">
+					<td>
+						<input type="checkbox" name="check">
+					</td>
+					<td>100</td>
+					<td>1</td>
+					<td>공통.디바이스1</td>
+					<td>7</td>
+					<td></td>
+					<td>웹-사파리</td>
+					<td></td>
+					<td>Y</td>
+					<td>1</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="search">
+					<td>
+						<input type="checkbox" name="check">
+					</td>
+					<td>99</td>
+					<td>1</td>
+					<td>공통.디바이스1</td>
+					<td>8</td>
+					<td></td>
+					<td>웹-훼일</td>
+					<td></td>
+					<td>Y</td>
+					<td>1</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="search">
+					<td>
+						<input type="checkbox" name="check">
+					</td>
+					<td>98</td>
+					<td>1</td>
+					<td>공통.디바이스1</td>
+					<td>9</td>
+					<td></td>
+					<td>웹-기타2</td>
+					<td></td>
+					<td>Y</td>
+					<td>1</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="search">
+					<td>
+						<input type="checkbox" name="check">
+					</td>
+					<td>97</td>
+					<td>1</td>
+					<td>공통.디바이스1</td>
+					<td>10</td>
+					<td></td>
+					<td>웹-기타3</td>
+					<td></td>
+					<td>Y</td>
+					<td>1</td>
 					<td></td>
 					<td></td>
 				</tr>
@@ -302,11 +382,6 @@
         }
       }
 	</script>
-	<script src="https://kit.fontawesome.com/df50a53180.js" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
-</html>
-	
 	<!-- end -->
 	<script src="https://kit.fontawesome.com/df50a53180.js" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
