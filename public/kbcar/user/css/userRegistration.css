@@ -27,3 +27,7 @@ ul {
 td,th {
     margin-top: 3pt;
 }
+
+a{
+    text-decoration-line: none;
+}
