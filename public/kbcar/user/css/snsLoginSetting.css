@@ -7,7 +7,7 @@
     display: grid;
     height: 100vh;
     grid-template-columns:0.2fr 1fr;
-    grid-template-rows: 0.2fr 2fr .1fr;
+    grid-template-rows: 0.2fr 2fr .2fr;
     grid-template-areas: 
       "sidebar nav"
       "sidebar main"
@@ -19,30 +19,30 @@
     color: #004d40;
     text-align: center;
   }
-
   nav {
-    grid-area: nav;
     text-align: start;
     margin-top: 20pt;
-    background: white;
   }
-
   main {
     grid-area: main;
-    background:white;
-    text-align: start;
+    background: white;
   }
-
+  
+  .main_MInfo {
+    text-align: start;
+    margin-top: 30pt;
+  }
+  
   #sidebar {
     grid-area: sidebar;
     background: white;
   }
-
+  
   #sidebar ul li p {
     font-size: 15px;
     font-weight: 800;
   }
-
+  
   #sidebar .myPage {
     font-size: 25px;
     font-weight: 800;
@@ -60,11 +60,10 @@
     padding-top: var(--main-padding);
     text-align: start;
   } 
-
+  
   a{
     text-decoration-line: none;
   }
-  
   
   @media only screen and (max-width:550px) {
     .container {
@@ -80,3 +79,4 @@
         "footer";
     }
   }
+  
