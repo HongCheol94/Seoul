@@ -167,9 +167,26 @@
                             <i class="fa-solid fa-xmark" style="color:white;"></i>
                         </button>
                     </a>
-                    <button type="button" style="background-color: white;">
-                        <i class="fa-solid fa-trash-can" style="color:red;"></i>
-                    </button>
+					<button type="button" id="btnModalDelete" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: white;">
+					   <i class="fa-solid fa-trash-can" style="color:red"></i>
+					</button>
+					<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">정말 지울거야? 후회 안해?</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body">
+					        삭제하시겠습니까?
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">아니요</button>
+					        <button type="button" class="btn btn-warning">예</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
                     <button type="button" style="background-color: white;">
                         <i class="fa-solid fa-bookmark" style="color:green"></i>
                     </button>

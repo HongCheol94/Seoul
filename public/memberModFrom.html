@@ -88,6 +88,15 @@
 				<div class="col-md-2 form-floating mt-3">
 					<input type="text" class="form-control" id="floatingPassword" placeholder="인증번호입력">
 					<label for="floatingadress">우편번호</label>
+					<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+			<script>
+			    new daum.Postcode({
+			        oncomplete: function(data) {
+			            // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분입니다.
+			            // 예제를 참고하여 다양한 활용법을 확인해 보세요.
+			        }
+			    }).open();
+			</script>
 				</div>
 				<div class="col-md-2 mt-3 btn-group">
 					<button type="button" class="btn btn-outline-warning btn-lg">우편번호</button>
@@ -128,6 +137,7 @@
 		
 	
 	<!-- end -->
+	
 	
 	
 	

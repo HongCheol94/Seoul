@@ -113,13 +113,29 @@
 			   </div>
 			</div>
 			<div class="row justify-content-center">
+				<div class="col-md-2 mt-3">
+					<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+						<option selected>Open this select menu</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					  </select>
+				</div>
+				<div class="col-md-4">
+					<div class="col-md-2 form-floating mt-3 md-4">
+						<input type="text" class="form-control" id="sample4_postcode" name="postNumber" value="<c:out value="${item.postNumber }"/>" placeholder="우편번호">
+						<label for="floatingadress">우편번호</label>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
 				<div class="col-md-2">
-					<div class="form-floating mt-3">
+					<div class="form-floating mt-2">
 						<input type="text" class="form-control" id="floatingPassword" placeholder="인증번호입력" value="hongcheol_kim">
 						<label for="floatingEmail">이메일</label>
 					</div>
 				</div>
-				<div class="col-md-2 mt-4 btn-group">
+				<div class="col-md-2 mt-2 btn-group">
 					  <button type="button" class="btn btn-outline-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 					    @Email
 					  </button>
