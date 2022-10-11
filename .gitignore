@@ -1,3 +1,4 @@
 .settings/
 .git/
 .project
+.DS_Store
