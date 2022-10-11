@@ -15,5 +15,5 @@ ws['A2'] = '1'
 ws['B2'] = '오일남'
 
 #4) 엑셀 저장하기
-wb.save(r'/Users/kims/Desktop/java1/java/factory/git/seoul/public/crawling2/02_파이썬엑셀다루기\참가자_data.xlsx') # \ 는 이스케이프 문자를 만드는 역할이라 그냥 문자 형태로 인식하기 위해 문자열 기호 r을 붙인다
+wb.save(r'D:\factory\ws_sts_4151\seoul\public\crawling2\02_파이썬엑셀다루기\참가자_data.xlsx') # \ 는 이스케이프 문자를 만드는 역할이라 그냥 문자 형태로 인식하기 위해 문자열 기호 r을 붙인다
                                                                   # 경로를 전부 \\ 두개를 or 전부 /로 통일시킨다
