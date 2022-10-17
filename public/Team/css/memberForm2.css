@@ -1,9 +1,9 @@
 .dwidth {
     border : 1px;
     border-color: 1px rgb(10, 97, 231);
-    width : 1000px;
+    width : 900px;
     height : auto;
-    margin-left: 700px;
+    margin-left: auto;
     margin-top: 100px;
 }
 
