@@ -1,0 +1,111 @@
+:root {
+    --main-radius: 5px;
+    --main-padding: 5px;
+  }
+  
+  body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns:0.09fr  1fr; 
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas: 
+      "sidebar nav"
+      "sidebar main"
+      "sidebar footer";
+    grid-gap: 0.2rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #004d40;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .nav-list{
+    color : black;
+  }
+  main {
+    grid-area: main;
+    background: yellow;
+  }
+  
+  .my_info {
+    margin: 20px 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .my_info div {
+    margin: 0;
+    padding: 0 20px;
+  }
+  
+  .info {
+    border-right: 1px solid black;
+    height: 80px;
+  }
+  
+  .info1 {
+    height: 80px;
+  }
+  
+  .main_order{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+  }
+  
+  .main_order2{
+    border-bottom: 1px solid;
+  }
+  
+  #sidebar {
+    grid-area: sidebar;
+    background: red;
+  }
+  
+  #sidebar ul li p {
+    font-size: 15px;
+    font-weight: 800;
+  }
+  
+  #sidebar .myPage {
+    font-size: 25px;
+    font-weight: 800;
+  }
+  
+  #sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer {
+    background: green;
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    text-align: start;
+  } 
+  
+  @media only screen and (max-width:550px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+      grid-template-areas: 
+        "nav"
+        "sidebar"
+        "main"
+        "content1"
+        "content2"
+        "content3"
+        "footer";
+    }
+  }
+  
+  a {
+    text-decoration: none;
+  }
