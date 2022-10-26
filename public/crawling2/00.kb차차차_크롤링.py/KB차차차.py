@@ -1,3 +1,4 @@
+from tokenize import tabsize
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -11,6 +12,9 @@ browser = webdriver.Chrome('c:/chromedriver.exe')
 browser.get('https://www.kbchachacha.com/')
 browser.implicitly_wait(10) # 로딩이 끝날 때까지 10초 기다림
 
+#탭 닫기
+tabs = browser.window_handles
+print(tabs)
 #살때 메뉴 들어가기
 browser.find_element(By.CSS_SELECTOR, ".navigation-global__link").click()
 
