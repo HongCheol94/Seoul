@@ -16,12 +16,12 @@ browser.find_element(By.CSS_SELECTOR, "a.nav.shop").click()
 time.sleep(2)
 
 # 검색창 클릭
-browser.find_element(By.CSS_SELECTOR, "input_searchInput_search_text_3CUDs").click()
+search = browser.find_element(By.CSS_SELECTOR, "input._searchInput_search_text_3CUDs").click()
 
 
 # 검색어 입력
 search.send_keys("아이폰13")
-search.send_keys(Keys.ENTER)
+search.send_keys(Keys.ENTER) 
 
 # 스크롤 전 높이.
 before_h = browser.execute_script("return window.scrollY")

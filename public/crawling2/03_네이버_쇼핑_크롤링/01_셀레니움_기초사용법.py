@@ -16,7 +16,7 @@ browser.find_element(By.CSS_SELECTOR, "a.nav.shop").click()
 time.sleep(2)
 
 # 검색창 클릭
-search = browser.find_element(By.CSS_SELECTOR, "search_searchInput_search_text_3CUDs")
+search = browser.find_element(By.CSS_SELECTOR, "input._searchInput_search_text_3CUDs")
 search.click()
 
 # # 검색어 입력
